@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
 
-public class SlotScript : MonoBehaviour, IPointerDownHandler,IPointerEnterHandler, IPointerExitHandler {
+public class SlotScript : MonoBehaviour, IPointerDownHandler,IPointerEnterHandler, IPointerExitHandler{
 
 	public Item item;
 
@@ -31,17 +31,21 @@ public class SlotScript : MonoBehaviour, IPointerDownHandler,IPointerEnterHandle
 		Debug.Log (this.name);
 	}
 
-	#region IPointerDownHandler implementation
+
 	public void OnPointerDown (PointerEventData eventData)
 	{
 		Debug.Log("Click ");
 		if (item != null) {
 			Debug.Log("I have a item " + this.item.Name);
 		}
-	}
-	#endregion
+		if (this.item != null && inventory.draggedItem == null) {
+			Debug.Log ("Started drag");
+			inventory.StartDrag (this);
+		} else if (this.item == null && inventory.draggedItem != null) {
+			inventory.DropDraggedItemToSLot(this);
+		}
 
-	#region IPointerEnterHandler implementation
+	}
 
 	public void OnPointerEnter (PointerEventData eventData)
 	{
@@ -50,13 +54,12 @@ public class SlotScript : MonoBehaviour, IPointerDownHandler,IPointerEnterHandle
 				}
 	}
 
-	#region IPointerExitHandler implementation
 
 	public void OnPointerExit (PointerEventData eventData)
 	{
 		inventory.HideTooltip ();
 	}
 
-	#endregion
-	#endregion
+
+
 }

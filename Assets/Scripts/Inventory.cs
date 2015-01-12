@@ -8,7 +8,10 @@ public class Inventory : MonoBehaviour {
 	public GameObject SlotPrefab;
 	public List<GameObject> Slots = new List<GameObject>();
 	public GameObject Tooltip;
+	public GameObject      DraggedItemImage;
 	public List<Item> Items = new List<Item> ();
+	private SlotScript draggingSlotScript = null;
+	public Item draggedItem = null;
 	ItemDatabase databse;
 	float firsSlotX = -278.2f;
 	// Use this for initialization
@@ -28,7 +31,37 @@ public class Inventory : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (draggedItem != null) {
+			Vector3 dragImagePos = (Input.mousePosition - GameObject.Find("Canvas").GetComponent<RectTransform>().localPosition);
+			DraggedItemImage.GetComponent<RectTransform>().localPosition = dragImagePos;
+		}
 	
+	}
+
+	public void StartDrag(SlotScript slotScript){
+		draggingSlotScript = slotScript;
+		draggedItem = slotScript.item;
+		slotScript.item = null;
+		ShowDraggedItemImage (draggedItem);
+	}
+
+	public void DropDraggedItemToSLot(SlotScript slotScript){
+		slotScript.item = draggedItem;
+		draggedItem = null;
+		draggingSlotScript = null;
+		this.DraggedItemImage.SetActive (false);
+	}
+
+	public void CancelDrag(){
+		draggingSlotScript.item = draggedItem;
+		draggedItem = null;
+		draggingSlotScript = null;
+		this.DraggedItemImage.SetActive (false);
+	}
+
+	private void ShowDraggedItemImage(Item item){
+		this.DraggedItemImage.SetActive (true);
+		this.DraggedItemImage.GetComponent<Image>().sprite = item.Icon;
 	}
 
 	void addItem(string itemId){
