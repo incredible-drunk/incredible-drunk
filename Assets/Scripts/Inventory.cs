@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class Inventory : MonoBehaviour {
+public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
 	public GameObject SlotPrefab;
 	public List<GameObject> Slots = new List<GameObject>();
@@ -13,6 +14,7 @@ public class Inventory : MonoBehaviour {
 	public List<Item> Items = new List<Item> ();
 	private SlotScript draggingSlotScript = null;
 	public Item draggedItem = null;
+	public bool mouseInsideInventory = false;
 	ItemDatabase databse;
 	float firsSlotX = -278.2f;
 	// Use this for initialization
@@ -51,7 +53,7 @@ public class Inventory : MonoBehaviour {
 	}
 
 	public void PlaceItemIntoWorld(Vector3 vector){
-		if (draggedItem != null && GameState.IsWithingPlayableArea(vector)) {
+		if (draggedItem != null && mouseInsideInventory == false && GameState.IsWithingPlayableArea(vector)) {
 			GameObject gameObject = (GameObject)Instantiate(draggedItem.InGameObjectPrefab);
 			gameObject.transform.position = vector;
 			draggedItem = null;
@@ -107,4 +109,22 @@ public class Inventory : MonoBehaviour {
 	public void HideTooltip(){
 		Tooltip.SetActive (false);
 	}
+
+	#region IPointerEnterHandler implementation
+
+	public void OnPointerEnter (PointerEventData eventData)
+	{
+		mouseInsideInventory = true;
+	}
+
+	#endregion
+
+	#region IPointerExitHandler implementation
+
+	public void OnPointerExit (PointerEventData eventData)
+	{
+		mouseInsideInventory = false;
+	}
+
+	#endregion
 }
