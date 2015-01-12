@@ -8,6 +8,8 @@ public class CameraFollow : MonoBehaviour
 	public float xSmooth = 8f;		// How smoothly the camera catches up with it's target movement in the x axis.
 	public float ySmooth = 8f;		// How smoothly the camera catches up with it's target movement in the y axis.
 	public float speed = 20f;
+
+	public float maxZoom = 7f;
 	
 	public GameObject gamePane;
 	
@@ -41,11 +43,19 @@ public class CameraFollow : MonoBehaviour
 	
 	void MouseWatch()
 	{
+		//zoom in zoom out
+		if (Input.GetAxis ("Mouse ScrollWheel") > 0) { // forward
+			camera.orthographicSize = Mathf.Max (Camera.main.orthographicSize-1, 1);
+		}
+
+		if (Input.GetAxis ("Mouse ScrollWheel") < 0) { // back
+			Camera.main.orthographicSize = Mathf.Min (Camera.main.orthographicSize + 1, maxZoom);
+	    }
+
 		// By default the target x and y coordinates of the camera are it's current x and y coordinates.
 		float targetX = transform.position.x;
 		float targetY = transform.position.y;
-		
-		
+
 		if(Input.mousePosition.x > screenWidth - xMargin)
 			targetX = Mathf.Lerp(transform.position.x, transform.position.x + speed * Time.deltaTime, xSmooth * Time.deltaTime);
 		
