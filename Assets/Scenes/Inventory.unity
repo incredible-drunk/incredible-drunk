@@ -1200,6 +1200,7 @@ GameObject:
   - 81: {fileID: 1070570740}
   - 114: {fileID: 1070570744}
   - 114: {fileID: 1070570745}
+  - 114: {fileID: 1070570746}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1295,6 +1296,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ToInstantiate: {fileID: 100000, guid: 4c5736ea0764d49c3a6adc2250d33f0f, type: 2}
+--- !u!114 &1070570746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070570738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1ff7ff4ce484f1aad8887efed74b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMargin: 2
+  yMargin: 2
+  xSmooth: 8
+  ySmooth: 8
+  speed: 20
+  maxXAndY: {x: 0, y: 0}
+  minXAndY: {x: 0, y: 0}
+  gamePane: {fileID: 811368953}
 --- !u!1 &1087887537
 GameObject:
   m_ObjectHideFlags: 0
