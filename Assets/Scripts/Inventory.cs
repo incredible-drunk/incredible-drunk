@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour {
 	public List<GameObject> Slots = new List<GameObject>();
 	public GameObject Tooltip;
 	public GameObject      DraggedItemImage;
+	private GameState GameState;
 	public List<Item> Items = new List<Item> ();
 	private SlotScript draggingSlotScript = null;
 	public Item draggedItem = null;
@@ -28,6 +29,10 @@ public class Inventory : MonoBehaviour {
 		addItem ("CUTTERS");
 		addItem ("POO");
 	}
+
+	void Awake(){
+		GameState = GameObject.Find ("GameState").GetComponent<GameState> ();
+	}
 	
 	// Update is called once per frame
 	void Update () {
@@ -43,6 +48,17 @@ public class Inventory : MonoBehaviour {
 		draggedItem = slotScript.item;
 		slotScript.item = null;
 		ShowDraggedItemImage (draggedItem);
+	}
+
+	public void PlaceItemIntoWorld(Vector3 vector){
+		if (draggedItem != null && GameState.IsWithingPlayableArea(vector)) {
+			GameObject gameObject = (GameObject)Instantiate(draggedItem.InGameObjectPrefab);
+			gameObject.transform.position = vector;
+			draggedItem = null;
+			draggingSlotScript = null;
+			this.DraggedItemImage.SetActive (false);
+
+		}
 	}
 
 	public void DropDraggedItemToSLot(SlotScript slotScript){

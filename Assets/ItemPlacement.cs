@@ -6,7 +6,7 @@ public class ItemPlacement : MonoBehaviour, IPointerDownHandler {
 	public GameObject ToInstantiate;
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -14,7 +14,9 @@ public class ItemPlacement : MonoBehaviour, IPointerDownHandler {
 		if (Input.GetMouseButtonDown (0)) {
 			var vector3 = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
 			Debug.Log(vector3);
-		    GameObject instance = (GameObject)Instantiate(ToInstantiate,vector3,Quaternion.identity);
+			GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().PlaceItemIntoWorld(vector3);
+
+		    //GameObject instance = (GameObject)Instantiate(ToInstantiate,vector3,Quaternion.identity);
 		}
 	}
 

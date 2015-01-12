@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class ItemDatabase : MonoBehaviour {
 
+
+
 	public Dictionary<string,Item> Items = new Dictionary<string,Item>();
 
 	// Use this for initialization
