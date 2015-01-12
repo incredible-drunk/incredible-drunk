@@ -47,7 +47,7 @@ public class BackgroundPropSpawner : MonoBehaviour
 		Rigidbody2D propInstance = Instantiate(backgroundProp, spawnPos, Quaternion.identity) as Rigidbody2D;
 
 		// The sprites for the props all face left.  Therefore, if the prop should be facing right...
-		if(!facingLeft)
+		if(facingLeft)
 		{
 			// ... flip the scale in the x axis.
 			Vector3 scale = propInstance.transform.localScale;
