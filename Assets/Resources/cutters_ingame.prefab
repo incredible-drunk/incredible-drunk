@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &106408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 406408}
+  - 61: {fileID: 6106406}
+  - 114: {fileID: 11406406}
+  m_Layer: 0
+  m_Name: Blades
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &137256
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,6 +27,8 @@ GameObject:
   - 4: {fileID: 437256}
   - 50: {fileID: 5037258}
   - 61: {fileID: 6137258}
+  - 61: {fileID: 6106408}
+  - 114: {fileID: 11406408}
   m_Layer: 0
   m_Name: cutters_ingame
   m_TagString: Untagged
@@ -33,6 +52,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &406408
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .730000019, y: .0399999991, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 437256}
+  m_RootOrder: 1
 --- !u!4 &437256
 Transform:
   m_ObjectHideFlags: 1
@@ -40,10 +71,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.30380678, y: -.697795391, z: 0}
+  m_LocalPosition: {x: 1.95000005, y: 5.48000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 437258}
+  - {fileID: 406408}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &437258
@@ -52,9 +84,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137258}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: .999644518, w: .0266625285}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .34251982, y: .342520088, z: .342520088}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 437256}
   m_RootOrder: 0
@@ -73,6 +105,28 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6106406
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106408}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .577366829, y: .566799521}
+  m_Center: {x: -.253579855, y: .068677865}
+--- !u!61 &6106408
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137256}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .912269115, y: .147758961}
+  m_Center: {x: -.29452455, y: .426120758}
 --- !u!61 &6137258
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -82,8 +136,30 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .829989195, y: .869991779}
-  m_Center: {x: -.00499987602, y: -.00500035286}
+  m_Size: {x: .683793068, y: .109250814}
+  m_Center: {x: -.0780980587, y: -.141711235}
+--- !u!114 &11406406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1116aebf278d4cb7a5a18268aa5675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11406408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37f1f57708094fbb8119cb54238d6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21237258
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -104,7 +180,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4076a7cfcaf5e41229348b3b1fb242d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3089ab8732ca045d8877d12bf5914778, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
