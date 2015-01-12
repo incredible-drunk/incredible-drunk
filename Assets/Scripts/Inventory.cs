@@ -30,6 +30,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 		addItem("MOUSE");
 		addItem ("CUTTERS");
 		addItem ("POO");
+		addItem ("CHEESE");
 	}
 
 	void Awake(){

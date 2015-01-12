@@ -111,7 +111,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 483964, guid: 2f0e8417a8ee97141bdc632a0f1a788d, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f0e8417a8ee97141bdc632a0f1a788d, type: 2}
@@ -686,7 +686,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 462412, guid: 716faf4dfd5354d4bbc3bcc9560ee76d, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 716faf4dfd5354d4bbc3bcc9560ee76d, type: 2}
@@ -917,7 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f5fe2982a2c49fcbc08e7cbbe771c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
+  State: 2
   GameStateTextUi: {fileID: 131675607}
   PlayableAreaMinY: -1.13
   PlayableAreaMaxY: 8.75
@@ -2451,7 +2451,7 @@ Prefab:
       objectReference: {fileID: 131675607}
     - target: {fileID: 11453732, guid: 906428306e48c4a8fb1b347b4b6cb3bc, type: 2}
       propertyPath: State
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 906428306e48c4a8fb1b347b4b6cb3bc, type: 2}
@@ -2666,7 +2666,7 @@ GameObject:
   m_Layer: 0
   m_Name: RimsaColider
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3200,6 +3200,7 @@ MonoBehaviour:
   Slots: []
   Tooltip: {fileID: 1031624002}
   DraggedItemImage: {fileID: 1358957542}
+  mouseInsideInventory: 0
 --- !u!1 &1869042129
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,7 +3287,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 035d3682f09bf4ddaa70a56d8d58c389, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 035d3682f09bf4ddaa70a56d8d58c389, type: 2}
       propertyPath: m_Enabled

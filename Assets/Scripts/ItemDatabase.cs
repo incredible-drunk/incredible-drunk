@@ -10,9 +10,10 @@ public class ItemDatabase : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		AddItem(new Item ("CUTTERS","Štípačky","Dokážou uštípnout co chcete."));
+		AddItem(new Item  ("CUTTERS","Štípačky","Dokážou uštípnout co chcete."));
 		AddItem (new Item ("MOUSE","Myš","Malá, bílá, píská."));
 		AddItem (new Item ("POO","Hovno","Opravdu velké hovno"));
+		AddItem (new Item ("CHEESE","Sýr","Sýr. Má díry a maj ho rádi myši, a tak."));
 	}
 
 	private void AddItem(Item item){
