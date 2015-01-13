@@ -189,6 +189,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 		addItem ("POO");
 		addItem ("CHEESE");
 		addItem ("CAT");
+		addItem ("BURGER");
 	}
 
 	private void DestroyPlacedItems(){
