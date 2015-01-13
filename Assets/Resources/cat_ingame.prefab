@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &139844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 439844}
+  - 61: {fileID: 6139844}
+  - 114: {fileID: 11439844}
+  m_Layer: 0
+  m_Name: DogDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &145134
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,6 +56,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &439844
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139844}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 445136}
+  m_RootOrder: 1
 --- !u!4 &445134
 Transform:
   m_ObjectHideFlags: 1
@@ -58,10 +87,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.51999998, y: -1.07000005, z: 0}
+  m_LocalPosition: {x: -.238724232, y: -.0479865745, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 445134}
+  - {fileID: 439844}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5045136
@@ -79,6 +109,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6139844
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139844}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 10.0703573, y: 1}
+  m_Center: {x: .100286961, y: 0}
 --- !u!61 &6145136
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -145,6 +186,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1, y: .797848701}
   m_Center: {x: 0, y: -.0529446602}
+--- !u!114 &11439844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3895f8e3c0a8eed4ab22e80e533b5fa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DetectedDog: {fileID: 0}
 --- !u!114 &11445136
 MonoBehaviour:
   m_ObjectHideFlags: 1
