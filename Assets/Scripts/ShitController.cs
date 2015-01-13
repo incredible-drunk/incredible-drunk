@@ -5,10 +5,13 @@ public class ShitController : MonoBehaviour
 {
 
     private Animator anim;
+	private ShitSpawner shitSpawner;
+	public Transform ShitPoint;
     // Use this for initialization
     void Start()
     {
         anim = GetComponent<Animator>();
+		shitSpawner = GameObject.Find ("ShitSpawner").GetComponent<ShitSpawner> ();
     }
     // Update is called once per frame
     void Update()
@@ -24,6 +27,7 @@ public class ShitController : MonoBehaviour
     public void spawnShit()
     {
         Debug.Log("Spawn the shit right here!");
+		shitSpawner.SpawnShitAtPoint (ShitPoint.position);
     }
 
     private void takeShit()

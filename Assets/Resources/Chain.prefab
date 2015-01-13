@@ -160,7 +160,7 @@ GameObject:
   - 50: {fileID: 5052436}
   - 233: {fileID: 23352436}
   - 61: {fileID: 6152436}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Klavir
   m_TagString: Klavir
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6162412}
   - 114: {fileID: 11462412}
   - 95: {fileID: 9593876}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: char_opilec
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +85,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  minSecondsBetweenIdle: 3
+  maxSecondsBetweenIdle: 10
 --- !u!212 &21262412
 SpriteRenderer:
   m_ObjectHideFlags: 1
