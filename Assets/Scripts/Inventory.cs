@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public GameObject      DraggedItemImage;
 	private GameState GameState;
 	public List<Item> Items = new List<Item> ();
-	private List<GameObject> _placedItems  = new List<GameObject> ();
+	private List<PlacedItem> _placedItems  = new List<PlacedItem> ();
 	private SlotScript draggingSlotScript = null;
 	public Item draggedItem = null;
 	public bool mouseInsideInventory = false;
@@ -58,12 +58,34 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public void PlaceItemIntoWorld(Vector3 vector){
 		if (draggedItem != null && mouseInsideInventory == false && GameState.IsWithingPlayableArea(vector)) {
 			GameObject gameObject = (GameObject)Instantiate(draggedItem.InGameObjectPrefab);
-			_placedItems.Add(gameObject);
 			gameObject.transform.position = vector;
+			var placedItem = new PlacedItem(draggedItem,gameObject);
+			placedItem.placementPosition = vector;
+			_placedItems.Add(placedItem);
 			draggedItem = null;
 			draggingSlotScript = null;
+
 			this.DraggedItemImage.SetActive (false);
 
+		}
+	}
+
+	public void GamePlayObjectClicked(GameObject gameObject){
+		if (GameState.State == GameStates.Planning) {
+			//Look through all placed items and find the right one
+			PlacedItem clickedPlacedItem = null;
+			foreach(PlacedItem placedItem in _placedItems){
+				if(placedItem.InGameItem == gameObject){
+					clickedPlacedItem = placedItem;
+					break;
+				}
+			}
+			if(clickedPlacedItem != null){
+				draggedItem = clickedPlacedItem.Item;
+				ShowDraggedItemImage(draggedItem);
+				Destroy(clickedPlacedItem.InGameItem);
+				_placedItems.Remove(clickedPlacedItem);
+			}
 		}
 	}
 
@@ -119,14 +141,31 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
 		if (newState == GameStates.Planning || newState == GameStates.Intro) {
-						DestroyPlacedItems ();
-						ResetInventory ();
+			if(oldStates == GameStates.Planning){
+				DestroyPlacedItems ();
+				ResetInventory ();
+			}else{
+				foreach (GameObject slot in Slots) {
+					slot.SetActive(true);
+				}
+				ResetPlacedItems();
+			}
 		} else if (newState == GameStates.Simulation) {
 			this.gameObject.GetComponent<Image>().enabled = false;
 			foreach (GameObject slot in Slots) {
-				DestroyObject(slot);
+				slot.SetActive(false);
 			}
-			Slots.Clear ();				
+						
+		}
+	}
+
+	private void ResetPlacedItems(){
+		foreach(PlacedItem placedItem in _placedItems){
+			if(placedItem.InGameItem != null){
+				Destroy(placedItem.InGameItem);
+			}
+			placedItem.InGameItem = (GameObject)Instantiate(placedItem.Item.InGameObjectPrefab);
+			placedItem.InGameItem.transform.position = placedItem.placementPosition;
 		}
 	}
 
@@ -154,8 +193,8 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
 	private void DestroyPlacedItems(){
 		Debug.Log("Inventory is destorying placed items");
-		foreach(var placedItem in _placedItems){
-			Destroy(placedItem);
+		foreach(PlacedItem placedItem in _placedItems){
+			Destroy(placedItem.InGameItem);
 		}
 		_placedItems.Clear();
 	}

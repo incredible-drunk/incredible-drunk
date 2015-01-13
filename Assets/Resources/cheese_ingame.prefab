@@ -9,7 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 488812}
   - 212: {fileID: 21288810}
-  m_Layer: 11
+  - 61: {fileID: 6122194}
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.48000002, y: 5.23999977, z: 0}
+  m_LocalPosition: {x: .994112909, y: -1.26908028, z: 0}
   m_LocalScale: {x: .735499263, y: .735499859, z: .735499859}
   m_Children:
   - {fileID: 488812}
@@ -73,6 +74,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6122194
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188812}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.15199995, y: 1.15199995}
+  m_Center: {x: 0, y: 0}
 --- !u!61 &6188814
 BoxCollider2D:
   m_ObjectHideFlags: 1
