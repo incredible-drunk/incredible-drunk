@@ -14,7 +14,10 @@ public class ItemPlacement : MonoBehaviour, IPointerDownHandler {
 		if (Input.GetMouseButtonDown (0)) {
 			var vector3 = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10));
 			Debug.Log(vector3);
-			GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().PlaceItemIntoWorld(vector3);
+			var inventory = GameObject.FindGameObjectWithTag("Inventory");
+			if(inventory != null){
+				inventory.GetComponent<Inventory>().PlaceItemIntoWorld(vector3);
+			}
 
 		    //GameObject instance = (GameObject)Instantiate(ToInstantiate,vector3,Quaternion.identity);
 		}

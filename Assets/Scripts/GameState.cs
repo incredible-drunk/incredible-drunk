@@ -13,10 +13,11 @@ public enum GameStates{
 }
 
 public class GameState : MonoBehaviour {
-
+	private bool initialized = false;
 	public GameStates State;
 	public GameObject GameStateTextUi;
 	public GameObject GameStateButton;
+	public GameObject GameResetButton;
 	public float PlayableAreaMinY;
 	public float PlayableAreaMaxY;
 	public float PlayableAreaMinX;
@@ -26,7 +27,10 @@ public class GameState : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		if (!initialized) {
+			SetNewGameState(State);
+			initialized = true;
+		}
 	}
 
 	void Awake(){
@@ -50,6 +54,10 @@ public class GameState : MonoBehaviour {
 
 	public void StartSimulation(){
 		SetNewGameState (GameStates.Simulation);
+	}
+
+	public void Reset(){
+		SetNewGameState (GameStates.Planning);
 	}
 
 	public void SetNewGameState(GameStates newGameState){

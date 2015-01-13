@@ -20,23 +20,13 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	float firsSlotX = -278.2f;
 	// Use this for initialization
 	void Start () {
-		databse = GameObject.FindGameObjectWithTag ("ItemDatabase").GetComponent<ItemDatabase> ();
-		for (int i = 0; i < 8; i++) {
-			GameObject slot = (GameObject)Instantiate(SlotPrefab);
-			Slots.Add(slot);
-			slot.transform.SetParent(this.gameObject.transform);
-			slot.name = "Slot"+i;
-			slot.GetComponent<RectTransform>().localPosition = new Vector3(firsSlotX + i*(65+10),0,0) ;
-		}
-		addItem("MOUSE");
-		addItem ("CUTTERS");
-		addItem ("POO");
-		addItem ("CHEESE");
-		addItem ("CAT");
+
 	}
 
 	void Awake(){
+		databse = GameObject.FindGameObjectWithTag ("ItemDatabase").GetComponent<ItemDatabase> ();
 		GameState = GameObject.Find ("GameState").GetComponent<GameState> ();
+		GameState.RegisterGameStateListener (this);
 	}
 	
 	// Update is called once per frame
@@ -44,6 +34,16 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 		if (draggedItem != null) {
 			Vector3 dragImagePos = (Input.mousePosition - GameObject.Find("Canvas").GetComponent<RectTransform>().localPosition);
 			DraggedItemImage.GetComponent<RectTransform>().localPosition = dragImagePos;
+			if(GameState.State != GameStates.Planning){
+				CancelDrag();
+			}
+		}
+		if (GameState.State == GameStates.Planning) {
+
+			this.gameObject.SetActive(true);
+		} else {
+
+			this.gameObject.SetActive(false);
 		}
 	
 	}
@@ -119,11 +119,39 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
 		if (newState == GameStates.Planning || newState == GameStates.Intro) {
-			foreach(var placedItem in _placedItems){
-				Destroy(placedItem);
-			}
-			_placedItems.Clear();
+			DestroyPlacedItems();
+			ResetInventory();
 		}
+	}
+
+	private void ResetInventory(){
+		foreach (GameObject slot in Slots) {
+			DestroyObject(slot);
+		}
+		Slots.Clear ();
+
+
+
+		for (int i = 0; i < 8; i++) {
+			GameObject slot = (GameObject)Instantiate(SlotPrefab);
+			Slots.Add(slot);
+			slot.transform.SetParent(this.gameObject.transform);
+			slot.name = "Slot"+i;
+			slot.GetComponent<RectTransform>().localPosition = new Vector3(firsSlotX + i*(65+10),0,0) ;
+		}
+		addItem("MOUSE");
+		addItem ("CUTTERS");
+		addItem ("POO");
+		addItem ("CHEESE");
+		addItem ("CAT");
+	}
+
+	private void DestroyPlacedItems(){
+		Debug.Log("Inventory is destorying placed items");
+		foreach(var placedItem in _placedItems){
+			Destroy(placedItem);
+		}
+		_placedItems.Clear();
 	}
 
 	#endregion

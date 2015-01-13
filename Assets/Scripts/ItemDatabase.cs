@@ -8,13 +8,18 @@ public class ItemDatabase : MonoBehaviour {
 
 	public Dictionary<string,Item> Items = new Dictionary<string,Item>();
 
-	// Use this for initialization
-	void Start () {
+	void Awake(){
 		AddItem(new Item  ("CUTTERS","Štípačky","Dokážou uštípnout co chcete."));
 		AddItem (new Item ("MOUSE","Myš","Malá, bílá, píská."));
 		AddItem (new Item ("POO","Hovno","Opravdu velké hovno"));
 		AddItem (new Item ("CHEESE","Sýr","Sýr. Má díry a maj ho rádi myši, a tak."));
-		AddItem (new Item ("CAT","Kočka","Nasraná a tlustá kočka."));
+		AddItem (new Item ("CAT","Kočka","Nasraná a tlustá kočka."));	
+	}
+
+
+	// Use this for initialization
+	void Start () {
+
 	}
 
 	private void AddItem(Item item){
