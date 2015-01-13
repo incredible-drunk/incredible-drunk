@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 2be248bb694cc084d937308d140b28b5
+guid: 3ba2d104ddbe2054191e77f0d7f04219
 TextureImporter:
   fileIDToRecycleName:
-    21300000: myska_0
-    21300002: myska_1
-    21300004: myska_2
-    21300006: myska_3
-    21300008: myska_4
-    21300010: myska_5
+    21300000: mys_00000
+    21300002: mys_00001
+    21300004: mys_00002
+    21300006: mys_00003
+    21300008: mys_00004
+    21300010: mys_00005
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,7 +28,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -43,71 +43,71 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 300
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: myska_0
+    - name: mys_00000
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 324
-        height: 136
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 6, y: 9, z: 0, w: 3}
-    - name: myska_1
+        x: 2
+        y: 634
+        width: 329
+        height: 127
+      alignment: 9
+      pivot: {x: .443769008, y: .61811024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mys_00001
       rect:
         serializedVersion: 2
-        x: 333
-        y: 6
+        x: 2
+        y: 506
+        width: 329
+        height: 126
+      alignment: 9
+      pivot: {x: .443769008, y: .615079343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mys_00002
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 893
+        width: 329
+        height: 129
+      alignment: 9
+      pivot: {x: .443769008, y: .624031007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mys_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 763
         width: 329
         height: 128
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .443769008, y: .62109375}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: myska_2
+    - name: mys_00004
       rect:
         serializedVersion: 2
-        x: 664
-        y: 7
-        width: 329
-        height: 127
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: myska_3
-      rect:
-        serializedVersion: 2
-        x: 995
-        y: 8
+        x: 2
+        y: 378
         width: 329
         height: 126
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .443769008, y: .615079343}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: myska_4
+    - name: mys_00005
       rect:
         serializedVersion: 2
-        x: 1327
-        y: 9
-        width: 315
-        height: 126
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: myska_5
-      rect:
-        serializedVersion: 2
-        x: 1654
-        y: 9
+        x: 2
+        y: 250
         width: 329
-        height: 127
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 126
+      alignment: 9
+      pivot: {x: .443769008, y: .615079343}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
