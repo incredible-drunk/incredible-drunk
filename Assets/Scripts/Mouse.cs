@@ -9,10 +9,11 @@ public class Mouse : ItemIngameScript {
 	public float SpotCatSpeed = 4f;
 	public float MinDistanceToCat = 40f;
 	GameObject sensedCat;
-
+    
+    Animator anim;
 	// Use this for initialization
 	void Start () {
-	
+	    anim = transform.Find("Sprite").GetComponent<Animator>();
 	}
 
 
@@ -22,7 +23,7 @@ public class Mouse : ItemIngameScript {
 	
 	// Update is called once per frame
 	void Update () {
-
+        
 	}
 
 
@@ -35,13 +36,13 @@ public class Mouse : ItemIngameScript {
 			}
 			//rigidbody2D.velocity = new Vector2(transform.localScale.x * MoveSpeed, rigidbody2D.velocity.y);	
 		}
+        anim.SetFloat("currentVelocity", Mathf.Abs(rigidbody2D.velocity.x));
 	}
 
 	void CatBehavior(){
 		Vector2 vectorToCat = sensedCat.rigidbody2D.position - this.rigidbody2D.position;
 		if(vectorToCat.magnitude < MinDistanceToCat){
-			if(Math.Abs(vectorToCat.x) > 0.2){
-				float moveSpeed = MoveSpeed*1;
+			if(Math.Abs(vectorToCat.x) > 0.2){				
 				if(vectorToCat.x < 0 && transform.localScale.x < 0){
 					Flip();
 				}else if(vectorToCat.x > 0 && transform.localScale.x > 0){
@@ -58,8 +59,7 @@ public class Mouse : ItemIngameScript {
 		GameObject cheese =    (GameObject) GameObject.FindGameObjectWithTag("Cheese");
 		if(cheese != null && cheese.rigidbody2D != null){
 			Vector2 vectorToCheese = cheese.rigidbody2D.position - this.rigidbody2D.position;
-			if(Math.Abs(vectorToCheese.x) > 0.2){
-				float moveSpeed = MoveSpeed*1;
+			if(Math.Abs(vectorToCheese.x) > 0.2){				
 				if(vectorToCheese.x < 0 && transform.localScale.x > 0){
 					Flip();
 				}else if(vectorToCheese.x > 0 && transform.localScale.x < 0){
