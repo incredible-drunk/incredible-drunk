@@ -71,7 +71,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	}
 
 	public void GamePlayObjectClicked(GameObject gameObject){
-		if (GameState.State == GameStates.Planning) {
+		if (GameState.State == GameStates.Planning && draggedItem == null) {
 			//Look through all placed items and find the right one
 			PlacedItem clickedPlacedItem = null;
 			foreach(PlacedItem placedItem in _placedItems){

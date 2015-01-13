@@ -11,7 +11,8 @@ GameObject:
   - 212: {fileID: 21275678}
   - 95: {fileID: 9575678}
   - 114: {fileID: 11464090}
-  m_Layer: 0
+  - 61: {fileID: 6197084}
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.714744985, y: -.564511001, z: 0}
+  m_LocalPosition: {x: 1.84814537, y: -.810571611, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 475678}
@@ -99,6 +100,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.21867728, y: 1.0277375}
   m_Center: {x: -.199344099, y: -.160246372}
+--- !u!61 &6197084
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175678}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.77276421, y: 1.47127056}
+  m_Center: {x: -.0164126158, y: -.0410313606}
 --- !u!95 &9575678
 Animator:
   serializedVersion: 3
