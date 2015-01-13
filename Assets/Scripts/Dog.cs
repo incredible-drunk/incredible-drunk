@@ -56,10 +56,10 @@ public class Dog : ItemIngameScript {
 	}
 
 	void CheeseBehavior(){
-		GameObject cheese =    (GameObject) GameObject.FindGameObjectWithTag("Cheese");
+		GameObject cheese =    (GameObject) GameObject.FindGameObjectWithTag("Burger");
 		if(cheese != null && cheese.rigidbody2D != null){
 			Vector2 vectorToCheese = cheese.rigidbody2D.position - this.rigidbody2D.position;
-			if(Math.Abs(vectorToCheese.x) > 0.2){				
+			if(Math.Abs(vectorToCheese.x) > 1.0){				
 				if(vectorToCheese.x < 0 && transform.localScale.x > 0){
 					Flip();
 				}else if(vectorToCheese.x > 0 && transform.localScale.x < 0){
