@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 00d2c43256d644e4aa28fecbc8e230b6
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Opilec hazi hlavou_00000
+    21300002: Opilec hazi hlavou_00001
+    21300004: Opilec hazi hlavou_00002
+    21300006: Opilec hazi hlavou_00003
+    21300008: Opilec hazi hlavou_00004
+    21300010: Opilec hazi hlavou_00005
+    21300012: Opilec hazi hlavou_00006
+    21300014: Opilec hazi hlavou_00007
+    21300016: Opilec hazi hlavou_00008
+    21300018: Opilec hazi hlavou_00009
+    21300020: Opilec hazi hlavou_00010
+    21300022: Opilec hazi hlavou_00011
+    21300024: Opilec hazi hlavou_00012
+    21300026: Opilec hazi hlavou_00013
+    21300028: Opilec hazi hlavou_00014
+    21300030: Opilec hazi hlavou_00015
+    21300032: Opilec hazi hlavou_00016
+    21300034: Opilec hazi hlavou_00017
+    21300036: Opilec hazi hlavou_00018
+    21300038: Opilec hazi hlavou_00019
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Opilec hazi hlavou_00000
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 951
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00001
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1743
+        width: 284
+        height: 788
+      alignment: 9
+      pivot: {x: .605633795, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00002
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1727
+        width: 279
+        height: 789
+      alignment: 9
+      pivot: {x: .616487443, y: .499366283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00003
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1732
+        width: 284
+        height: 787
+      alignment: 9
+      pivot: {x: .60915494, y: .500635326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00004
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1737
+        width: 296
+        height: 784
+      alignment: 9
+      pivot: {x: .591216207, y: .502551019}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00005
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3306
+        width: 304
+        height: 788
+      alignment: 9
+      pivot: {x: .572368443, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00006
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1754
+        width: 314
+        height: 789
+      alignment: 9
+      pivot: {x: .557324827, y: .499366283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00007
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2533
+        width: 325
+        height: 782
+      alignment: 9
+      pivot: {x: .544615388, y: .503836334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00008
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3327
+        width: 333
+        height: 767
+      alignment: 9
+      pivot: {x: .531531513, y: .513689697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00009
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 2520
+        width: 341
+        height: 784
+      alignment: 9
+      pivot: {x: .519061565, y: .502551019}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00010
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2518
+        width: 350
+        height: 789
+      alignment: 9
+      pivot: {x: .508571446, y: .499366283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00011
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3309
+        width: 357
+        height: 785
+      alignment: 9
+      pivot: {x: .50140059, y: .501910806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00012
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 3306
+        width: 352
+        height: 788
+      alignment: 9
+      pivot: {x: .505681813, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00013
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 3305
+        width: 347
+        height: 789
+      alignment: 9
+      pivot: {x: .510086477, y: .499366283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00014
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 3317
+        width: 339
+        height: 777
+      alignment: 9
+      pivot: {x: .522123873, y: .507078528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00015
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 2545
+        width: 326
+        height: 780
+      alignment: 9
+      pivot: {x: .539877295, y: .505128205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00016
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 2523
+        width: 310
+        height: 781
+      alignment: 9
+      pivot: {x: .564516127, y: .504481435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00017
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 2521
+        width: 292
+        height: 782
+      alignment: 9
+      pivot: {x: .592465758, y: .503836334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00018
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1736
+        width: 284
+        height: 782
+      alignment: 9
+      pivot: {x: .605633795, y: .503836334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hazi hlavou_00019
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 951
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

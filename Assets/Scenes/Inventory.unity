@@ -1831,7 +1831,6 @@ MonoBehaviour:
   xSmooth: 8
   ySmooth: 8
   speed: 20
-  maxZoom: 7
   gamePane: {fileID: 811368953}
 --- !u!1 &1126532271
 GameObject:

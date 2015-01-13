@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: f5ef24c2960e5584ba66fae52c297d29
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bezdak walk_00000
+    21300002: bezdak walk_00001
+    21300004: bezdak walk_00002
+    21300006: bezdak walk_00003
+    21300008: bezdak walk_00004
+    21300010: bezdak walk_00005
+    21300012: bezdak walk_00006
+    21300014: bezdak walk_00007
+    21300016: bezdak walk_00008
+    21300018: bezdak walk_00009
+    21300020: bezdak walk_00010
+    21300022: bezdak walk_00011
+    21300024: bezdak walk_00012
+    21300026: bezdak walk_00013
+    21300028: bezdak walk_00014
+    21300030: bezdak walk_00015
+    21300032: bezdak walk_00016
+    21300034: bezdak walk_00017
+    21300036: bezdak walk_00018
+    21300038: bezdak walk_00019
+    21300040: bezdak walk_00020
+    21300042: bezdak walk_00021
+    21300044: bezdak walk_00022
+    21300046: bezdak walk_00023
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bezdak walk_00000
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 245
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00001
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1030
+        width: 292
+        height: 782
+      alignment: 9
+      pivot: {x: .602739751, y: .507672608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00002
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1814
+        width: 314
+        height: 778
+      alignment: 9
+      pivot: {x: .579617858, y: .511568129}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00003
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 2605
+        width: 335
+        height: 774
+      alignment: 9
+      pivot: {x: .564179122, y: .516795874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00004
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 2594
+        width: 345
+        height: 765
+      alignment: 9
+      pivot: {x: .56811595, y: .521568656}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00005
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 3339
+        width: 360
+        height: 755
+      alignment: 9
+      pivot: {x: .550000012, y: .529801309}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00006
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2621
+        width: 365
+        height: 740
+      alignment: 9
+      pivot: {x: .547945201, y: .541891873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00007
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 3361
+        width: 374
+        height: 733
+      alignment: 9
+      pivot: {x: .561497331, y: .547066867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00008
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3363
+        width: 383
+        height: 731
+      alignment: 9
+      pivot: {x: .574412525, y: .5485636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00009
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1162
+        width: 308
+        height: 733
+      alignment: 9
+      pivot: {x: .620129883, y: .544338346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00010
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1104
+        width: 272
+        height: 739
+      alignment: 9
+      pivot: {x: .672794104, y: .53991878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00011
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1190
+        width: 305
+        height: 744
+      alignment: 9
+      pivot: {x: .573770463, y: .534946263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00012
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2606
+        width: 330
+        height: 731
+      alignment: 9
+      pivot: {x: .512121201, y: .523939788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00013
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1936
+        width: 328
+        height: 726
+      alignment: 9
+      pivot: {x: .509146333, y: .522038579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00014
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1897
+        width: 343
+        height: 722
+      alignment: 9
+      pivot: {x: .483965009, y: .522160649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00015
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 2664
+        width: 355
+        height: 717
+      alignment: 9
+      pivot: {x: .492957741, y: .531380773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00016
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 3383
+        width: 365
+        height: 711
+      alignment: 9
+      pivot: {x: .506849289, y: .534458518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00017
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 3381
+        width: 337
+        height: 713
+      alignment: 9
+      pivot: {x: .557863474, y: .528751731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00018
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 1884
+        width: 308
+        height: 720
+      alignment: 9
+      pivot: {x: .616883099, y: .526388884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00019
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 432
+        width: 292
+        height: 728
+      alignment: 9
+      pivot: {x: .660958886, y: .523351669}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00020
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1140
+        width: 275
+        height: 742
+      alignment: 9
+      pivot: {x: .650909066, y: .516172528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00021
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 1845
+        width: 272
+        height: 758
+      alignment: 9
+      pivot: {x: .613970578, y: .513192594}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00022
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1833
+        width: 276
+        height: 770
+      alignment: 9
+      pivot: {x: .608695626, y: .511688292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bezdak walk_00023
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 246
+        width: 280
+        height: 782
+      alignment: 9
+      pivot: {x: .603571415, y: .510230184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
