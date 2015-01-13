@@ -11,7 +11,12 @@ public class BackgroundPropSpawner : MonoBehaviour
 	public float minTimeBetweenSpawns;		// The shortest possible time between spawns.
 	public float maxTimeBetweenSpawns;		// The longest possible time between spawns.
 	public float minSpeed;					// The lowest possible speed of the prop.
-	public float maxSpeed;					// The highest possible speeed of the prop.
+	public float maxSpeed;	
+	public float TimeToFirstSpawn;
+	public bool SpawnedForFirstTime = false;
+
+
+	// The highest possible speeed of the prop.
 
 	void Start ()
 	{
@@ -25,8 +30,15 @@ public class BackgroundPropSpawner : MonoBehaviour
 
 	IEnumerator Spawn ()
 	{
+		float waitTime = 0;
+		if (SpawnedForFirstTime == false) {
+			waitTime = TimeToFirstSpawn;
+			SpawnedForFirstTime = true;
+		}else{
+			waitTime = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
+		}
 		// Create a random wait time before the prop is instantiated.
-		float waitTime = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
+
 
 		// Wait for the designated period.
 		yield return new WaitForSeconds(waitTime);

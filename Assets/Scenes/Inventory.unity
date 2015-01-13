@@ -768,6 +768,8 @@ MonoBehaviour:
   maxTimeBetweenSpawns: 18
   minSpeed: 5
   maxSpeed: 8
+  TimeToFirstSpawn: 0
+  SpawnedForFirstTime: 0
 --- !u!4 &550803649
 Transform:
   m_ObjectHideFlags: 0
@@ -3410,6 +3412,8 @@ MonoBehaviour:
   maxTimeBetweenSpawns: 15
   minSpeed: 5
   maxSpeed: 8
+  TimeToFirstSpawn: 1
+  SpawnedForFirstTime: 0
 --- !u!1001 &1926634078
 Prefab:
   m_ObjectHideFlags: 0
@@ -3473,6 +3477,10 @@ Prefab:
       propertyPath: m_Name
       value: feldaCreator
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 035d3682f09bf4ddaa70a56d8d58c389, type: 2}
+      propertyPath: TimeToFirstSpawn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 035d3682f09bf4ddaa70a56d8d58c389, type: 2}
   m_RootGameObject: {fileID: 757185217}
@@ -3527,6 +3535,8 @@ MonoBehaviour:
   maxTimeBetweenSpawns: 8
   minSpeed: 5
   maxSpeed: 8
+  TimeToFirstSpawn: 0
+  SpawnedForFirstTime: 0
 --- !u!1001 &2000522564
 Prefab:
   m_ObjectHideFlags: 0
