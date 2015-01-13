@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 475678}
   - 212: {fileID: 21275678}
   - 95: {fileID: 9575678}
+  - 114: {fileID: 11464090}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -31,7 +32,7 @@ GameObject:
   - 61: {fileID: 6175678}
   m_Layer: 0
   m_Name: dog_ingame
-  m_TagString: Mouse
+  m_TagString: Dog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +45,7 @@ Transform:
   m_GameObject: {fileID: 175678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -.231813803, y: .231813997, z: .231813997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 475680}
   m_RootOrder: 0
@@ -107,12 +108,23 @@ Animator:
   m_GameObject: {fileID: 175678}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 80789f5092fa22f4c8e0b67d9ec843c2, type: 2}
+  m_Controller: {fileID: 9100000, guid: f049e8c4fd8467340b9b0e3f8551a952, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11464090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a794d408f1b6c4eabbf633dd478b82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11475678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,7 +133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 175680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c244001c9a9ad459b8e26226504bd6b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 001a96c28bd187f4fa8deace478063a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 1
@@ -147,7 +159,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 1024582385
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2f4d0e4a6cf964f4db12b242e3edb2f2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d2c48f28e4443d443aabcb30a41cbfbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
