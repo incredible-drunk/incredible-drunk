@@ -16,9 +16,9 @@ public class Cutters : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		Debug.Log("Blades collision!");
 		if(other.gameObject != null){
-			if(other.rigidbody2D != null){
+			if(other.rigidbody2D != null && other.isTrigger == false){
 				Debug.Log("Falling at: " + other.rigidbody2D.velocity.y);
-				if(other.rigidbody2D.mass >= 3 && other.rigidbody2D.velocity.y < -3){
+				if(other.rigidbody2D.mass >= 3 && other.rigidbody2D.velocity.y < -0.1){
 					this.gameObject.GetComponentInChildren<CutterBlades>().CutJoint();
 				}
 				

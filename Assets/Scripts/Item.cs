@@ -10,6 +10,7 @@ public class Item  {
 	public Sprite Icon;
 	public GameObject InGameObjectPrefab;
 
+
 	// Use this for initialization
 	void Start () {
 	

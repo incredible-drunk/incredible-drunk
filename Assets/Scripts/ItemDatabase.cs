@@ -14,6 +14,7 @@ public class ItemDatabase : MonoBehaviour {
 		AddItem (new Item ("MOUSE","Myš","Malá, bílá, píská."));
 		AddItem (new Item ("POO","Hovno","Opravdu velké hovno"));
 		AddItem (new Item ("CHEESE","Sýr","Sýr. Má díry a maj ho rádi myši, a tak."));
+		AddItem (new Item ("CAT","Kočka","Nasraná a tlustá kočka."));
 	}
 
 	private void AddItem(Item item){
