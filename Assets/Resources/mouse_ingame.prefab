@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 464324}
   - 212: {fileID: 21264324}
+  - 95: {fileID: 9552500}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -54,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.4499998, y: 4.84000015, z: 0}
+  m_LocalPosition: {x: -.991982102, y: -1.10600305, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464324}
@@ -97,6 +98,21 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 3.52690244, y: .464360237}
   m_Center: {x: 1.28257513, y: .114779949}
+--- !u!95 &9552500
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164324}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80789f5092fa22f4c8e0b67d9ec843c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11462840
 MonoBehaviour:
   m_ObjectHideFlags: 1
