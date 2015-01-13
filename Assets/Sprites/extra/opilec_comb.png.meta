@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: d56608170177f354fa44b0c01f206e82
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Opilec drink_00000
+    21300002: Opilec drink_00001
+    21300004: Opilec drink_00002
+    21300006: Opilec drink_00003
+    21300008: Opilec drink_00004
+    21300010: Opilec drink_00005
+    21300012: Opilec drink_00006
+    21300014: Opilec drink_00007
+    21300016: Opilec drink_00008
+    21300018: Opilec drink_00009
+    21300020: Opilec drink_00010
+    21300022: Opilec drink_00011
+    21300024: Opilec ohybani_00000
+    21300026: Opilec ohybani_00001
+    21300028: Opilec ohybani_00002
+    21300030: Opilec ohybani_00003
+    21300032: Opilec ohybani_00004
+    21300034: Opilec ohybani_00005
+    21300036: Opilec ohybani_00006
+    21300038: Opilec ohybani_00007
+    21300040: Opilec ohybani_00008
+    21300042: Opilec ohybani_00009
+    21300044: Opilec ohybani_00010
+    21300046: Opilec ohybani_00011
+    21300048: Opilec ruka v bok_00000
+    21300050: Opilec ruka v bok_00001
+    21300052: Opilec ruka v bok_00002
+    21300054: Opilec ruka v bok_00003
+    21300056: Opilec ruka v bok_00004
+    21300058: Opilec ruka v bok_00005
+    21300060: Opilec ruka v bok_00006
+    21300062: Opilec ruka v bok_00007
+    21300064: Opilec ruka v bok_00008
+    21300066: Opilec ruka v bok_00009
+    21300068: Opilec ruka v bok_00010
+    21300070: Opilec ruka v bok_00011
+    21300072: Opilec ukazuje_00000
+    21300074: Opilec ukazuje_00001
+    21300076: Opilec ukazuje_00002
+    21300078: Opilec ukazuje_00003
+    21300080: Opilec ukazuje_00004
+    21300082: Opilec ukazuje_00005
+    21300084: Opilec ukazuje_00006
+    21300086: Opilec ukazuje_00007
+    21300088: Opilec ukazuje_00008
+    21300090: Opilec ukazuje_00009
+    21300092: Opilec ukazuje_00010
+    21300094: Opilec ukazuje_00011
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Opilec drink_00000
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 3311
+        width: 280
+        height: 783
+      alignment: 9
+      pivot: {x: .610714257, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00001
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 3305
+        width: 280
+        height: 789
+      alignment: 9
+      pivot: {x: .617857158, y: .503168583}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00002
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1723
+        width: 281
+        height: 788
+      alignment: 9
+      pivot: {x: .626334548, y: .506345153}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00003
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1725
+        width: 282
+        height: 786
+      alignment: 9
+      pivot: {x: .634751797, y: .510178089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00004
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 2526
+        width: 289
+        height: 783
+      alignment: 9
+      pivot: {x: .629757762, y: .514687121}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00005
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 2529
+        width: 323
+        height: 781
+      alignment: 9
+      pivot: {x: .575851381, y: .518565953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00006
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 964
+        width: 334
+        height: 777
+      alignment: 9
+      pivot: {x: .565868258, y: .521235526}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00007
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 3310
+        width: 332
+        height: 784
+      alignment: 9
+      pivot: {x: .569277108, y: .516581655}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00008
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 2519
+        width: 337
+        height: 784
+      alignment: 9
+      pivot: {x: .563798249, y: .514030635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00009
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 935
+        width: 336
+        height: 786
+      alignment: 9
+      pivot: {x: .550595224, y: .510178089}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00010
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2513
+        width: 301
+        height: 789
+      alignment: 9
+      pivot: {x: .598006666, y: .505703449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec drink_00011
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3304
+        width: 283
+        height: 790
+      alignment: 9
+      pivot: {x: .621908128, y: .502531648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00000
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 956
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00001
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 2560
+        width: 286
+        height: 753
+      alignment: 9
+      pivot: {x: .517482519, y: .523240387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00002
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 3361
+        width: 305
+        height: 733
+      alignment: 9
+      pivot: {x: .406557381, y: .537517071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00003
+      rect:
+        serializedVersion: 2
+        x: 2294
+        y: 1046
+        width: 320
+        height: 712
+      alignment: 9
+      pivot: {x: .303124994, y: .553370774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00004
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 2699
+        width: 398
+        height: 660
+      alignment: 9
+      pivot: {x: .326633155, y: .596969724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00005
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3447
+        width: 478
+        height: 647
+      alignment: 9
+      pivot: {x: .38075313, y: .608964443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00006
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 397
+        width: 478
+        height: 647
+      alignment: 9
+      pivot: {x: .38075313, y: .608964443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00007
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 1247
+        width: 478
+        height: 647
+      alignment: 9
+      pivot: {x: .38075313, y: .608964443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00008
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3447
+        width: 478
+        height: 647
+      alignment: 9
+      pivot: {x: .38075313, y: .608964443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00009
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 1896
+        width: 374
+        height: 662
+      alignment: 9
+      pivot: {x: .310160428, y: .595166147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00010
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 233
+        width: 309
+        height: 729
+      alignment: 9
+      pivot: {x: .359223306, y: .540466368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ohybani_00011
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1760
+        width: 269
+        height: 767
+      alignment: 9
+      pivot: {x: .527881026, y: .513689697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00000
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1741
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00001
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1733
+        width: 288
+        height: 784
+      alignment: 9
+      pivot: {x: .600694418, y: .501275539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00002
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 149
+        width: 293
+        height: 784
+      alignment: 9
+      pivot: {x: .597269654, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 149
+        width: 298
+        height: 784
+      alignment: 9
+      pivot: {x: .593959749, y: .49872449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00004
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 957
+        width: 316
+        height: 782
+      alignment: 9
+      pivot: {x: .569620252, y: .497442454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00005
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 3315
+        width: 335
+        height: 779
+      alignment: 9
+      pivot: {x: .540298522, y: .496790767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00006
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 178
+        width: 355
+        height: 777
+      alignment: 9
+      pivot: {x: .515492976, y: .496782511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00007
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 3315
+        width: 335
+        height: 779
+      alignment: 9
+      pivot: {x: .540298522, y: .496790767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00008
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1743
+        width: 316
+        height: 782
+      alignment: 9
+      pivot: {x: .569620252, y: .497442454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00009
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 149
+        width: 298
+        height: 784
+      alignment: 9
+      pivot: {x: .593959749, y: .49872449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00010
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 939
+        width: 293
+        height: 784
+      alignment: 9
+      pivot: {x: .597269654, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ruka v bok_00011
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 2524
+        width: 288
+        height: 784
+      alignment: 9
+      pivot: {x: .600694418, y: .501275539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00000
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1741
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00001
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1741
+        width: 304
+        height: 783
+      alignment: 9
+      pivot: {x: .578947365, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00002
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 163
+        width: 345
+        height: 783
+      alignment: 9
+      pivot: {x: .515942037, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00003
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1739
+        width: 385
+        height: 783
+      alignment: 9
+      pivot: {x: .472727269, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00004
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 154
+        width: 422
+        height: 783
+      alignment: 9
+      pivot: {x: .440758288, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00005
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 172
+        width: 451
+        height: 782
+      alignment: 9
+      pivot: {x: .421286017, y: .503836334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00006
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2527
+        width: 455
+        height: 782
+      alignment: 9
+      pivot: {x: .426373631, y: .503836334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00007
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 3312
+        width: 455
+        height: 782
+      alignment: 9
+      pivot: {x: .417582422, y: .503836334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00008
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 3311
+        width: 449
+        height: 783
+      alignment: 9
+      pivot: {x: .414253891, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00009
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 948
+        width: 407
+        height: 783
+      alignment: 9
+      pivot: {x: .44717446, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00010
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 2526
+        width: 363
+        height: 783
+      alignment: 9
+      pivot: {x: .490358114, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec ukazuje_00011
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 954
+        width: 314
+        height: 783
+      alignment: 9
+      pivot: {x: .560509562, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
