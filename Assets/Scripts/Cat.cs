@@ -8,6 +8,7 @@ public class Cat : ItemIngameScript {
 	private float timeSinceLastJump = -3.1f;
 	public float SecondsToRechargeJump = 3;
 	private GameObject targetMouse = null;
+	public AudioClip JumpSound = null;
 	// Use this for initialization
 	void Start () {
 
@@ -34,6 +35,9 @@ public class Cat : ItemIngameScript {
 				sign = -1;
 			}
 			this.rigidbody2D.velocity = new Vector2(sign*(float)4.6,(float)10);
+			if(JumpSound != null){
+				AudioSource.PlayClipAtPoint(JumpSound,this.transform.position);
+			}
 		}
 	}
 

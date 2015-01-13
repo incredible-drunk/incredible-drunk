@@ -40,10 +40,10 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 		}
 		if (GameState.State == GameStates.Planning) {
 
-			this.gameObject.SetActive(true);
+			this.gameObject.GetComponent<Image>().enabled = true;
 		} else {
 
-			this.gameObject.SetActive(false);
+
 		}
 	
 	}
@@ -119,8 +119,14 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
 		if (newState == GameStates.Planning || newState == GameStates.Intro) {
-			DestroyPlacedItems();
-			ResetInventory();
+						DestroyPlacedItems ();
+						ResetInventory ();
+		} else if (newState == GameStates.Simulation) {
+			this.gameObject.GetComponent<Image>().enabled = false;
+			foreach (GameObject slot in Slots) {
+				DestroyObject(slot);
+			}
+			Slots.Clear ();				
 		}
 	}
 
