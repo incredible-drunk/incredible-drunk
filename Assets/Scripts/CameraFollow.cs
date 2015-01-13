@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
 	public float ySmooth = 8f;		// How smoothly the camera catches up with it's target movement in the y axis.
 	public float speed = 20f;
 
-	public float maxZoom = 7f;
+	private float maxZoom = 7f;
 	
 	public GameObject gamePane;
 	
