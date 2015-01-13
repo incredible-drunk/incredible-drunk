@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public enum GameStates{
 	Intro,
@@ -19,6 +20,8 @@ public class GameState : MonoBehaviour {
 	public float PlayableAreaMaxY;
 	public float PlayableAreaMinX;
 	public float PlayableAreaMaxX;
+	private List<IGameStateListener> _gameStateListeners = new List<IGameStateListener>();
+
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +45,18 @@ public class GameState : MonoBehaviour {
 		}
 	}
 
+	public void SetNewGameState(GameStates newGameState){
+		GameStates oldGameState = this.State;
+		this.State = newGameState;
+		foreach (var listener in _gameStateListeners) {
+			listener.OnGameStateChange(oldGameState,newGameState);
+		}
+	}
+
+	public void RegisterGameStateListener(IGameStateListener listener){
+		_gameStateListeners.Add (listener);
+	}
+
 	public bool IsWithingPlayableArea(Vector3 vec){
 		if (vec.x >= PlayableAreaMinX && vec.x <= PlayableAreaMaxX &&
 						vec.y >= PlayableAreaMinY && vec.y <= PlayableAreaMaxY) {
@@ -51,4 +66,8 @@ public class GameState : MonoBehaviour {
 		}
 	}
 	
+}
+
+public interface IGameStateListener{
+	void OnGameStateChange(GameStates oldStates, GameStates newState);
 }

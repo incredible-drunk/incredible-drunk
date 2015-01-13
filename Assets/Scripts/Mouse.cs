@@ -2,13 +2,12 @@
 using System.Collections;
 using System;
 
-public class Mouse : MonoBehaviour {
+public class Mouse : ItemIngameScript {
 
 
 	public float MoveSpeed = 2f;
 	public float SpotCatSpeed = 4f;
 	public float MinDistanceToCat = 40f;
-	GameState gameState;
 	GameObject sensedCat;
 
 	// Use this for initialization
@@ -18,7 +17,7 @@ public class Mouse : MonoBehaviour {
 
 
 	public void Awake(){
-		gameState = GameObject.Find ("GameState").GetComponent<GameState> ();
+		base.Awake ();
 	}
 	
 	// Update is called once per frame

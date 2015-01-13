@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,IGameStateListener {
 
 	public GameObject SlotPrefab;
 	public List<GameObject> Slots = new List<GameObject>();
@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public GameObject      DraggedItemImage;
 	private GameState GameState;
 	public List<Item> Items = new List<Item> ();
+	private List<GameObject> _placedItems  = new List<GameObject> ();
 	private SlotScript draggingSlotScript = null;
 	public Item draggedItem = null;
 	public bool mouseInsideInventory = false;
@@ -57,6 +58,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public void PlaceItemIntoWorld(Vector3 vector){
 		if (draggedItem != null && mouseInsideInventory == false && GameState.IsWithingPlayableArea(vector)) {
 			GameObject gameObject = (GameObject)Instantiate(draggedItem.InGameObjectPrefab);
+			_placedItems.Add(gameObject);
 			gameObject.transform.position = vector;
 			draggedItem = null;
 			draggingSlotScript = null;
@@ -111,6 +113,20 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public void HideTooltip(){
 		Tooltip.SetActive (false);
 	}
+
+	#region IGameStateListener implementation
+
+	public void OnGameStateChange (GameStates oldStates, GameStates newState)
+	{
+		if (newState == GameStates.Planning || newState == GameStates.Intro) {
+			foreach(var placedItem in _placedItems){
+				Destroy(placedItem);
+			}
+			_placedItems.Clear();
+		}
+	}
+
+	#endregion
 
 	#region IPointerEnterHandler implementation
 

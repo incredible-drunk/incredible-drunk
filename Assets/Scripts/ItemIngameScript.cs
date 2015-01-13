@@ -10,7 +10,7 @@ public class ItemIngameScript : MonoBehaviour {
 	
 	}
 
-	void Awake(){
+	protected void Awake(){
 		gameState = GameObject.Find ("GameState").GetComponent<GameState> ();
 	}
 	
