@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: d2c48f28e4443d443aabcb30a41cbfbf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pes walk_00000
+    21300002: pes walk_00001
+    21300004: pes walk_00002
+    21300006: pes walk_00003
+    21300008: pes walk_00004
+    21300010: pes walk_00005
+    21300012: pes walk_00006
+    21300014: pes walk_00007
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pes walk_00000
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1580
+        width: 650
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes walk_00001
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1580
+        width: 650
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes walk_00002
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1580
+        width: 650
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes walk_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1112
+        width: 650
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes walk_00004
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1112
+        width: 650
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes walk_00005
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1112
+        width: 650
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes walk_00006
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 644
+        width: 650
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes walk_00007
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 644
+        width: 650
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
