@@ -693,78 +693,6 @@ Prefab:
   m_RootGameObject: {fileID: 263513770}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &404107759
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 145136, guid: 3e61d345ba2cc4e7fa9f5e9387c26da5, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 404107763}
-  - 50: {fileID: 404107762}
-  - 61: {fileID: 404107761}
-  - 114: {fileID: 404107760}
-  m_Layer: 0
-  m_Name: cat_ingame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &404107760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11445136, guid: 3e61d345ba2cc4e7fa9f5e9387c26da5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 404107759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caa2fa0e3a17b45c89659e5725558680, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 0}
---- !u!61 &404107761
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6145136, guid: 3e61d345ba2cc4e7fa9f5e9387c26da5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 404107759}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .829989195, y: .869991779}
-  m_Center: {x: -.00499987602, y: -.00500035286}
---- !u!50 &404107762
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5045136, guid: 3e61d345ba2cc4e7fa9f5e9387c26da5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 404107759}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!4 &404107763
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 445136, guid: 3e61d345ba2cc4e7fa9f5e9387c26da5, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 404107759}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.66000009, y: 8.28999996, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1227004328}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
 --- !u!1 &477760747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,8 +956,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f5fe2982a2c49fcbc08e7cbbe771c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 2
+  State: 1
   GameStateTextUi: {fileID: 131675607}
+  GameStateButton: {fileID: 907833234}
   PlayableAreaMinY: -1.13
   PlayableAreaMaxY: 8.75
   PlayableAreaMinX: -7.30999994
@@ -1341,7 +1270,7 @@ GameObject:
   - 114: {fileID: 907833237}
   - 114: {fileID: 907833236}
   m_Layer: 0
-  m_Name: Button
+  m_Name: StartSimButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1403,7 +1332,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 907833237}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 626258387}
+        m_MethodName: StartSimulation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &907833237
@@ -1993,7 +1934,7 @@ GameObject:
   - 61: {fileID: 1137331875}
   m_Layer: 0
   m_Name: Klavir
-  m_TagString: Untagged
+  m_TagString: Klavir
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2128,57 +2069,6 @@ SpriteRenderer:
   m_SortingLayerID: 1024582385
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d9d6c7e4407984811ba3e571147bbaad, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1 &1227004327
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 145134, guid: 3e61d345ba2cc4e7fa9f5e9387c26da5, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1227004328}
-  - 212: {fileID: 1227004329}
-  m_Layer: 0
-  m_Name: Sprite
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1227004328
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 445134, guid: 3e61d345ba2cc4e7fa9f5e9387c26da5, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1227004327}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 404107763}
-  m_RootOrder: 0
---- !u!212 &1227004329
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21245136, guid: 3e61d345ba2cc4e7fa9f5e9387c26da5,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1227004327}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 1024582385
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7515d28b500974ab3a5813ba5e76dc28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1358957542
 GameObject:
@@ -2652,8 +2542,12 @@ Prefab:
       objectReference: {fileID: 131675607}
     - target: {fileID: 11453732, guid: 906428306e48c4a8fb1b347b4b6cb3bc, type: 2}
       propertyPath: State
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11453732, guid: 906428306e48c4a8fb1b347b4b6cb3bc, type: 2}
+      propertyPath: GameStateButton
+      value: 
+      objectReference: {fileID: 907833234}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 906428306e48c4a8fb1b347b4b6cb3bc, type: 2}
   m_RootGameObject: {fileID: 626258386}
@@ -3352,8 +3246,8 @@ DistanceJoint2D:
   m_CollideConnected: 0
   m_ConnectedRigidBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 1.78310883, y: 3.65990257}
-  m_Distance: 1
+  m_ConnectedAnchor: {x: 2.3549726, y: 4.62763977}
+  m_Distance: .00499999989
   m_MaxDistanceOnly: 0
 --- !u!1 &1848307895
 GameObject:

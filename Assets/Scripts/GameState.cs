@@ -16,6 +16,7 @@ public class GameState : MonoBehaviour {
 
 	public GameStates State;
 	public GameObject GameStateTextUi;
+	public GameObject GameStateButton;
 	public float PlayableAreaMinY;
 	public float PlayableAreaMaxY;
 	public float PlayableAreaMinX;
@@ -36,8 +37,10 @@ public class GameState : MonoBehaviour {
 	void Update () {
 		var textComponent = GameStateTextUi.GetComponent<Text> ();
 		if (State == GameStates.Planning) {
+				GameStateButton.SetActive(true);
 				textComponent.text = "Plánovací fáze";		
 		} else if (State == GameStates.Simulation) {
+				GameStateButton.SetActive(false);
 				textComponent.text = "Snímací fáze";
 		} else if (State == GameStates.Intro || State == GameStates.GameOverLose || State == GameStates.GameOverWin) {
 			textComponent.text = "";
@@ -45,7 +48,12 @@ public class GameState : MonoBehaviour {
 		}
 	}
 
+	public void StartSimulation(){
+		SetNewGameState (GameStates.Simulation);
+	}
+
 	public void SetNewGameState(GameStates newGameState){
+
 		GameStates oldGameState = this.State;
 		this.State = newGameState;
 		foreach (var listener in _gameStateListeners) {

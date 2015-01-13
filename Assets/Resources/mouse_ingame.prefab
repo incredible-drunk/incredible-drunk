@@ -27,9 +27,10 @@ GameObject:
   - 50: {fileID: 5064324}
   - 61: {fileID: 6164324}
   - 114: {fileID: 11462840}
+  - 61: {fileID: 6185100}
   m_Layer: 0
   m_Name: mouse_ingame
-  m_TagString: Untagged
+  m_TagString: Mouse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.54131126, y: 5.02014446, z: 0}
+  m_LocalPosition: {x: -11.4499998, y: 4.84000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464324}
@@ -83,8 +84,19 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .829989195, y: .869991779}
-  m_Center: {x: -.00499987602, y: -.00500035286}
+  m_Size: {x: .829989195, y: .475391299}
+  m_Center: {x: -.00500011444, y: .115926743}
+--- !u!61 &6185100
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164326}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 3.52690244, y: .464360237}
+  m_Center: {x: 1.28257513, y: .114779949}
 --- !u!114 &11462840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,6 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 1
+  SpotCatSpeed: 3
+  MinDistanceToCat: 3.5999999
 --- !u!212 &21264324
 SpriteRenderer:
   m_ObjectHideFlags: 1
