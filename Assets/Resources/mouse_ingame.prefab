@@ -10,7 +10,8 @@ GameObject:
   - 4: {fileID: 464324}
   - 212: {fileID: 21264324}
   - 95: {fileID: 9552500}
-  m_Layer: 0
+  - 61: {fileID: 6137120}
+  m_Layer: 13
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.991982102, y: -1.10600305, z: 0}
+  m_LocalPosition: {x: .542731762, y: -.856944978, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464324}
@@ -76,6 +77,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6137120
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164324}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 2.97000003, y: 2.61874127}
+  m_Center: {x: -0, y: .190629482}
 --- !u!61 &6164324
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -124,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c244001c9a9ad459b8e26226504bd6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InitialPosition: {x: 0, y: 0, z: 0}
   MoveSpeed: 1
   SpotCatSpeed: 3
   MinDistanceToCat: 3.5999999
