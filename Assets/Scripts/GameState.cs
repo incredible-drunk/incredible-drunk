@@ -38,13 +38,22 @@ public class GameState : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		var textComponent = GameStateTextUi.GetComponent<Text> ();
+		if (State == GameStates.Intro) {
+			GameStateButton.SetActive(false);
+			GameResetButton.SetActive(false);
+			GameStateTextUi.SetActive(false);
+		}
 		if (State == GameStates.Planning) {
+				GameResetButton.SetActive(true);
 				GameStateButton.SetActive(true);
+				GameStateTextUi.SetActive(true);
 				textComponent.text = "Plánovací fáze";		
 		} else if (State == GameStates.Simulation) {
 				GameStateButton.SetActive(false);
+				GameResetButton.SetActive(true);
+				GameStateTextUi.SetActive(true);
 				textComponent.text = "Snímací fáze";
 		} else if (State == GameStates.Intro || State == GameStates.GameOverLose || State == GameStates.GameOverWin) {
 			textComponent.text = "";

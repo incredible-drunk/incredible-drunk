@@ -140,8 +140,8 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
-		if (newState == GameStates.Planning || newState == GameStates.Intro) {
-			if(oldStates == GameStates.Planning){
+		if (newState == GameStates.Planning) {
+			if(oldStates == GameStates.Planning || oldStates == GameStates.Intro){
 				DestroyPlacedItems ();
 				ResetInventory ();
 			}else{
@@ -150,7 +150,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 				}
 				ResetPlacedItems();
 			}
-		} else if (newState == GameStates.Simulation) {
+		} else if (newState == GameStates.Simulation || newState == GameStates.Intro) {
 			this.gameObject.GetComponent<Image>().enabled = false;
 			foreach (GameObject slot in Slots) {
 				slot.SetActive(false);

@@ -26,7 +26,7 @@ public class DrunkSpawner : MonoBehaviour, IGameStateListener {
 
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
-		if(newState == GameStates.Intro || newState == GameStates.Planning){
+		if(newState == GameStates.Intro || (newState == GameStates.Planning && oldStates != GameStates.Intro)){
 			RespawnDrunk();
 		}
 	}

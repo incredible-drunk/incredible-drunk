@@ -14,6 +14,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: StartAnim
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -26,6 +32,26 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!1101 &110111740
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110224180}
+  m_DstState: {fileID: 110287680}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: StartAnim
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110116414
 Transition:
   serializedVersion: 2
@@ -55,13 +81,13 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110287680}
   m_DstState: {fileID: 110283636}
-  m_TransitionDuration: .125
+  m_TransitionDuration: .102554746
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 1
+  - m_ConditionMode: 5
     m_ConditionEvent: SlideDown
     m_EventTreshold: 0
-    m_ExitTime: .875
+    m_ExitTime: .879999995
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -81,18 +107,18 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1102 &110255368
+--- !u!1102 &110224180
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: HeroCombatStance 0
+  m_Name: Default
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: 71b6098d382b11a46a6304beee7bac17, type: 2}
+  - {fileID: 0}
   m_ParentStateMachine: {fileID: 110786732}
-  m_Position: {x: 383, y: -67, z: 0}
+  m_Position: {x: -144, y: -72, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -133,22 +159,29 @@ StateMachine:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110202328}
+  m_DefaultState: {fileID: 110224180}
   m_States:
   - {fileID: 110287680}
   - {fileID: 110283636}
   - {fileID: 110202328}
-  - {fileID: 110255368}
+  - {fileID: 110224180}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110283636}
+      first: {fileID: 110224180}
+      second:
+      - {fileID: 110111740}
+    data:
+      first: {fileID: 110202328}
       second: []
     data:
       first: {fileID: 110287680}
       second:
       - {fileID: 110182526}
+    data:
+      first: {fileID: 110283636}
+      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -108, y: -12, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
