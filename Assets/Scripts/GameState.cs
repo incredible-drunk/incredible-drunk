@@ -97,9 +97,11 @@ public class GameState : MonoBehaviour, IGameStateListener {
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
 		if (newState == GameStates.Intro) {
+			audio.volume = 1f;
 			audio.clip = IntroMusic;
 			audio.Play ();
 		} else if (newState == GameStates.Planning && oldStates == GameStates.Intro ) {
+			audio.volume = 0.22f;
 			audio.clip =GameMusic;
 			audio.loop = true;
 			audio.Play();

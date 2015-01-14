@@ -23,6 +23,10 @@ public class DrunkController : MonoBehaviour {
 	private float shitCleanedTime; 
 
 	public AudioClip RozmrdSound = null;
+	private AudioClip clipToPlay = null;
+
+
+
 
     private Animator anim;
 
@@ -155,6 +159,33 @@ public class DrunkController : MonoBehaviour {
 		GetComponent<AudioSource> ().PlayOneShot (RozmrdSound);
 	}
 
+	public void CommentOnPlacement(AudioClip clip,float delay){
+		if (clip != null) {
+			if(clipToPlay != null){
+				clipToPlay = null;
+				CancelInvoke("CommentAfterDelay");
+			}
+			clipToPlay = clip;
+			Debug.Log ("Will comment with " + clip.name + " after " + delay);
+			Invoke("CommentAfterDelay",delay);
+			//yield return new WaitForSeconds (delay);
+
+		}
+	}
+	public void CommentAfterDelay(){
+		if (clipToPlay == null) {
+			return;		
+		}
+		var source = GetComponent<AudioSource> ();
+		if (source.isPlaying == false) {
+			Debug.Log ("Commenting on  " + clipToPlay.name );
+			source.clip = clipToPlay;
+			source.loop = false;
+			source.Play ();
+			Point ();
+		}	
+	}
+
 	void OnTriggerEnter2D(Collider2D other){
 		
 		if(other.gameObject != null && other.gameObject.tag == "DogShit" && State == DrunkState.Normal){
@@ -168,6 +199,7 @@ public class DrunkController : MonoBehaviour {
 
 		
 	}
+
 
 
 }

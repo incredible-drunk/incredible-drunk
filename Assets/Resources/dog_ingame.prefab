@@ -63,6 +63,8 @@ GameObject:
   - 61: {fileID: 6175680}
   - 114: {fileID: 11475678}
   - 61: {fileID: 6175678}
+  - 82: {fileID: 8240282}
+  - 114: {fileID: 11440282}
   m_Layer: 0
   m_Name: dog_ingame
   m_TagString: Dog
@@ -113,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.87940919, y: .480503201, z: 0}
+  m_LocalPosition: {x: -2.38083386, y: 4.24535036, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 475678}
@@ -180,6 +182,64 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 1.77276421, y: 1.47127056}
   m_Center: {x: -.0164126158, y: -.0410313606}
+--- !u!82 &8240282
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175680}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9575678
 Animator:
   serializedVersion: 3
@@ -207,6 +267,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Burger: {fileID: 0}
+--- !u!114 &11440282
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62a60fe8fa90334783a49536a4919c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProtagonistCommentary:
+  - {fileID: 8300000, guid: 91954d31acc452442b8873998925b127, type: 3}
+  - {fileID: 8300000, guid: 9f5a3712ecbb7aa4faa4d70dfec2a429, type: 3}
+  - {fileID: 8300000, guid: 62ddacc36115cdf49a3468e2bc182e75, type: 3}
+  - {fileID: 8300000, guid: 1f367c31a15c0ac4a91c6b1c4bf22d30, type: 3}
+  - {fileID: 8300000, guid: 3f50fb3118c3f7c49aeedb3a9dce5bc4, type: 3}
+  DrunkCommentary: {fileID: 8300000, guid: 039cd5afb05ced144a01a16746913e88, type: 3}
+  SpawnClip: {fileID: 0}
 --- !u!114 &11464090
 MonoBehaviour:
   m_ObjectHideFlags: 1

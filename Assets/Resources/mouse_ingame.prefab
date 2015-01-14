@@ -30,6 +30,7 @@ GameObject:
   - 61: {fileID: 6164324}
   - 114: {fileID: 11462840}
   - 61: {fileID: 6185100}
+  - 114: {fileID: 11436490}
   m_Layer: 0
   m_Name: mouse_ingame
   m_TagString: Mouse
@@ -56,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .542731762, y: -.856944978, z: 0}
+  m_LocalPosition: {x: -2.18984246, y: 1.57472932, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464324}
@@ -125,6 +126,26 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11436490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62a60fe8fa90334783a49536a4919c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProtagonistCommentary:
+  - {fileID: 8300000, guid: 4792882aaa3787148bfd9fb497bb53ad, type: 3}
+  - {fileID: 8300000, guid: 06a8fda42d4c1a44f9e86ea64978beb6, type: 3}
+  - {fileID: 8300000, guid: 21424a00a937a7c46a4e978db1d755e8, type: 3}
+  - {fileID: 8300000, guid: 8299493a3cceea44ca1fef3300b0899f, type: 3}
+  - {fileID: 8300000, guid: 3cd261d14be55414097bd4248ee1da31, type: 3}
+  - {fileID: 8300000, guid: 9ea6b84617b107945a474f5a501f86c2, type: 3}
+  DrunkCommentary: {fileID: 8300000, guid: 3130adc5c11f5ab40b1b1bd542a2c4e9, type: 3}
+  SpawnClip: {fileID: 0}
 --- !u!114 &11462840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialPosition: {x: 0, y: 0, z: 0}
-  MoveSpeed: 1
+  MoveSpeed: .5
   SpotCatSpeed: 3
   MinDistanceToCat: 3.5999999
 --- !u!212 &21264324

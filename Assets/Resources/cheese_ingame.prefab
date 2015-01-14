@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 488814}
   - 50: {fileID: 5088810}
   - 61: {fileID: 6188814}
+  - 114: {fileID: 11462302}
   m_Layer: 11
   m_Name: cheese_ingame
   m_TagString: Cheese
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .994112909, y: -1.26908028, z: 0}
+  m_LocalPosition: {x: .161721051, y: 4.19500303, z: 0}
   m_LocalScale: {x: .735499263, y: .735499859, z: .735499859}
   m_Children:
   - {fileID: 488812}
@@ -96,6 +97,23 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.07688951, y: .223376274}
   m_Center: {x: .00432538986, y: -.325579166}
+--- !u!114 &11462302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62a60fe8fa90334783a49536a4919c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProtagonistCommentary:
+  - {fileID: 8300000, guid: c1d37a86ce55d804ea9225e1cd6598d2, type: 3}
+  - {fileID: 8300000, guid: 2a6dec76588480e4f93192d4d9b3250e, type: 3}
+  - {fileID: 8300000, guid: 0640ffb245a6d454995b34ff0c55b4ab, type: 3}
+  DrunkCommentary: {fileID: 8300000, guid: db7a2cc51b6cc6140aaed854b1335d4c, type: 3}
+  SpawnClip: {fileID: 0}
 --- !u!212 &21288810
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -18,6 +18,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public bool mouseInsideInventory = false;
 	ItemDatabase databse;
 	public AudioSource audioSource;
+
 	float firsSlotX = -278.2f;
 	// Use this for initialization
 	void Start () {
@@ -68,10 +69,32 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 			_placedItems.Add(placedItem);
 			draggedItem = null;
 			draggingSlotScript = null;
-
 			this.DraggedItemImage.SetActive (false);
+			MakeDrunkCommentOnPlacement(placedItem.Item);
+
 
 		}
+	}
+
+    private void MakeDrunkCommentOnPlacement(Item item){
+
+		var drunk = GameObject.FindGameObjectWithTag("Drunk");
+		var drunkAudioSource = drunk.GetComponent<AudioSource>();
+		float delta = 0;
+
+		if(drunkAudioSource.isPlaying){
+			return;
+		}
+		Debug.Log ("Making drunk comment on " + item.Name);
+		if (audioSource.isPlaying) {
+			delta = audioSource.clip.length - audioSource.time + 0.5f;
+		}
+		if (item.SoundBank != null) {
+						drunk.GetComponent<DrunkController> ().CommentOnPlacement (item.SoundBank.DrunkCommentary, delta);
+		} else {
+			Debug.Log ("No soundbank for drunk to comment on " + item.Name);
+		}
+	
 	}
 
 	public void GamePlayObjectClicked(GameObject gameObject){
@@ -128,6 +151,11 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 		return null;
 	}
 	public void PlayItemProtagonistSpeech(Item item){
+		var drunk = GameObject.FindGameObjectWithTag ("Drunk");
+		if (drunk != null && drunk.GetComponent<AudioSource> ().isPlaying) {
+			return;
+		}
+
 		if (item.SoundBank != null && audioSource.isPlaying == false) {
 			Debug.Log("Playing osund for " + item.Name);
 			var clip = item.GetNextProtagonistClip();

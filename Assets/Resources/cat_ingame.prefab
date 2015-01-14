@@ -47,9 +47,9 @@ GameObject:
   - 114: {fileID: 11445136}
   - 61: {fileID: 6182158}
   - 61: {fileID: 6179072}
-  - 61: {fileID: 6179070}
   - 61: {fileID: 6179068}
   - 82: {fileID: 8207166}
+  - 114: {fileID: 11447490}
   m_Layer: 0
   m_Name: cat_ingame
   m_TagString: Cat
@@ -88,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.238724232, y: -.0479865745, z: 0}
+  m_LocalPosition: {x: -1.57451653, y: 4.19746113, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 445134}
@@ -143,17 +143,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 6.12112808, y: 1}
   m_Center: {x: .0863120556, y: 0}
---- !u!61 &6179070
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145136}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: .921136618, y: 8.20850945}
-  m_Center: {x: -3.43596864, y: -.0420303345}
 --- !u!61 &6179072
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -272,6 +261,25 @@ MonoBehaviour:
   Target: {fileID: 0}
   SecondsToRechargeJump: 3
   JumpSound: {fileID: 8300000, guid: 62b17462c4f6c4397a98070278b66779, type: 3}
+--- !u!114 &11447490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62a60fe8fa90334783a49536a4919c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProtagonistCommentary:
+  - {fileID: 8300000, guid: 95e6e57892bacde45b2120e0c2bced21, type: 3}
+  - {fileID: 8300000, guid: d4e549169fe700f4ba2181bbe673fd5f, type: 3}
+  - {fileID: 8300000, guid: 70b8b5e6be451344a97ed342a0d170a8, type: 3}
+  - {fileID: 8300000, guid: 706c08ac18425bc44b61dd14409768b1, type: 3}
+  - {fileID: 8300000, guid: e0dcd4af8def8134b96ef71591cee6db, type: 3}
+  DrunkCommentary: {fileID: 8300000, guid: 5a822ac9e440e504897712d8fba08d28, type: 3}
+  SpawnClip: {fileID: 0}
 --- !u!212 &21245136
 SpriteRenderer:
   m_ObjectHideFlags: 1
