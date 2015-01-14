@@ -10,7 +10,9 @@ public class Cutters : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetKey (KeyCode.W)) {
+			this.gameObject.GetComponentInChildren<CutterBlades>().CutJoint();
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
@@ -26,4 +28,6 @@ public class Cutters : MonoBehaviour {
 		}
 		
 	}
+
+
 }

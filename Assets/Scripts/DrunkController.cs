@@ -22,6 +22,8 @@ public class DrunkController : MonoBehaviour {
 	public float ShitClearingTime = 5;
 	private float shitCleanedTime; 
 
+	public AudioClip RozmrdSound = null;
+
     private Animator anim;
 
 	void Awake() {
@@ -141,9 +143,16 @@ public class DrunkController : MonoBehaviour {
 
 	}
 	public void SteppedOutOfShit(){
-		if (State != DrunkState.Rozmrd) {
+		if (State == DrunkState.InDeepShit) {
 			State = DrunkState.Normal;
 		}
+	}
+
+	public void DoRozmrd(){
+		anim.ResetTrigger("Tshit");
+		anim.SetTrigger("Trozmrd");
+		State = DrunkState.Rozmrd;
+		GetComponent<AudioSource> ().PlayOneShot (RozmrdSound);
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
@@ -151,8 +160,12 @@ public class DrunkController : MonoBehaviour {
 		if(other.gameObject != null && other.gameObject.tag == "DogShit" && State == DrunkState.Normal){
 			Debug.Log("Stepped in shit");
 			StepInShit();
-			
+		}else if(other.gameObject != null && other.gameObject.tag == "Klavir"){
+			if(State == DrunkState.InDeepShit){
+				DoRozmrd();
+			}
 		}
+
 		
 	}
 

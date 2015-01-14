@@ -9,9 +9,10 @@ public class Cat : ItemIngameScript {
 	public float SecondsToRechargeJump = 3;
 	private GameObject targetMouse = null;
 	public AudioClip JumpSound = null;
+	private AudioSource auidoSource;
 	// Use this for initialization
 	void Start () {
-
+		auidoSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -40,7 +41,9 @@ public class Cat : ItemIngameScript {
 			}
 			this.rigidbody2D.velocity = new Vector2(sign*(float)4.6,(float)10);
 			if(JumpSound != null){
-				AudioSource.PlayClipAtPoint(JumpSound,this.transform.position);
+
+				auidoSource.PlayOneShot(JumpSound);
+				//AudioSource.PlayClipAtPoint(JumpSound,this.transform.position);
 			}
 		}
 	}

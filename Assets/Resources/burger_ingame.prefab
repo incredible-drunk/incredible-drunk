@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 433648}
   - 50: {fileID: 5033648}
   - 61: {fileID: 6133648}
+  - 114: {fileID: 11456248}
   m_Layer: 11
   m_Name: burger_ingame
   m_TagString: Burger
@@ -96,6 +97,25 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .879777431, y: 1.15200007}
   m_Center: {x: .0314103439, y: 0}
+--- !u!114 &11456248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62a60fe8fa90334783a49536a4919c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProtagonistCommentary:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  DrunkCommentary: {fileID: 0}
+  SpawnClip: {fileID: 0}
 --- !u!212 &21233648
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -17,6 +17,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public Item draggedItem = null;
 	public bool mouseInsideInventory = false;
 	ItemDatabase databse;
+	public AudioSource audioSource;
 	float firsSlotX = -278.2f;
 	// Use this for initialization
 	void Start () {
@@ -27,6 +28,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 		databse = GameObject.FindGameObjectWithTag ("ItemDatabase").GetComponent<ItemDatabase> ();
 		GameState = GameObject.Find ("GameState").GetComponent<GameState> ();
 		GameState.RegisterGameStateListener (this);
+		audioSource = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -51,8 +53,10 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public void StartDrag(SlotScript slotScript){
 		draggingSlotScript = slotScript;
 		draggedItem = slotScript.item;
+		PlayItemProtagonistSpeech (draggedItem);
 		slotScript.item = null;
 		ShowDraggedItemImage (draggedItem);
+
 	}
 
 	public void PlaceItemIntoWorld(Vector3 vector){
@@ -123,6 +127,17 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 		}
 		return null;
 	}
+	public void PlayItemProtagonistSpeech(Item item){
+		if (item.SoundBank != null && audioSource.isPlaying == false) {
+			Debug.Log("Playing osund for " + item.Name);
+			var clip = item.GetNextProtagonistClip();
+			audioSource.clip = clip;
+			audioSource.Play();
+		} else if(item.SoundBank == null) {
+			Debug.Log("No sound bank for " + item.Name);		
+		}
+	}
+
 
 	public void ShowTooltip(Vector3 tooltipPos,Item item){
 		Tooltip.SetActive (true);
@@ -131,6 +146,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
 		itemNameText.text = item.Name;
 		itemDescriptionText.text = item.Description;
+
 	}
 	public void HideTooltip(){
 		Tooltip.SetActive (false);

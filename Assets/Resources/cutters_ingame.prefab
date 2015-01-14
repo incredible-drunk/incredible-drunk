@@ -29,6 +29,7 @@ GameObject:
   - 61: {fileID: 6137258}
   - 61: {fileID: 6106408}
   - 114: {fileID: 11406408}
+  - 114: {fileID: 11424494}
   m_Layer: 0
   m_Name: cutters_ingame
   m_TagString: Untagged
@@ -72,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.04377365, y: 4.88589668, z: 0}
+  m_LocalPosition: {x: 1.95337188, y: 4.88871861, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 437258}
@@ -172,6 +173,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37f1f57708094fbb8119cb54238d6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11424494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62a60fe8fa90334783a49536a4919c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ProtagonistCommentary:
+  - {fileID: 8300000, guid: b8538183ab6080944a758efc227ee4f2, type: 3}
+  - {fileID: 8300000, guid: 438bcf68e8c4ed846a89a78e4f2c3c61, type: 3}
+  - {fileID: 8300000, guid: 927c9d7c3d2fb664da3c57a4e392e59e, type: 3}
+  DrunkCommentary: {fileID: 8300000, guid: 6498e53d1b3f1074abe99f9f3148c405, type: 3}
+  SpawnClip: {fileID: 0}
 --- !u!212 &21237258
 SpriteRenderer:
   m_ObjectHideFlags: 1
