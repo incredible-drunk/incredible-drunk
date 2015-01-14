@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.9759264, y: .119207203, z: 0}
+  m_LocalPosition: {x: 1.43664384, y: -.102796614, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -148,6 +148,7 @@ MonoBehaviour:
   maxSecondsBetweenIdle: 10
   ShitClearingTime: 5
   RozmrdSound: {fileID: 8300000, guid: 6586673affa386b4483ec0ac83901ac9, type: 3}
+  ShitAnnoyed: {fileID: 8300000, guid: b408c850ac1225f45ab8e34d2e37d7df, type: 3}
 --- !u!212 &21262412
 SpriteRenderer:
   m_ObjectHideFlags: 1

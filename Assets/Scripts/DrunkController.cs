@@ -23,7 +23,9 @@ public class DrunkController : MonoBehaviour {
 	private float shitCleanedTime; 
 
 	public AudioClip RozmrdSound = null;
+	public AudioClip ShitAnnoyed = null;
 	private AudioClip clipToPlay = null;
+
 
 
 
@@ -137,6 +139,9 @@ public class DrunkController : MonoBehaviour {
 		anim.ResetTrigger("Twalk");
 		anim.SetTrigger("Tshit");
 		shitCleanedTime = Time.time + ShitClearingTime;
+
+		var source = GetComponent<AudioSource> ();
+		source.PlayOneShot (ShitAnnoyed);
 	}
 
 	private void SetpOutOfShit(){
