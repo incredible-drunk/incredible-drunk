@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShitPoint: {fileID: 412766}
+  IsAfterShit: 0
 --- !u!114 &11475678
 MonoBehaviour:
   m_ObjectHideFlags: 1

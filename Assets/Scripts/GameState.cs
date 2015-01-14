@@ -12,7 +12,7 @@ public enum GameStates{
 
 }
 
-public class GameState : MonoBehaviour {
+public class GameState : MonoBehaviour, IGameStateListener {
 	private bool initialized = false;
 	public GameStates State;
 	public GameObject GameStateTextUi;
@@ -22,6 +22,8 @@ public class GameState : MonoBehaviour {
 	public float PlayableAreaMaxY;
 	public float PlayableAreaMinX;
 	public float PlayableAreaMaxX;
+	public AudioClip IntroMusic;
+	public AudioClip GameMusic;
 	private List<IGameStateListener> _gameStateListeners = new List<IGameStateListener>();
 
 
@@ -34,7 +36,7 @@ public class GameState : MonoBehaviour {
 	}
 
 	void Awake(){
-	
+		this.RegisterGameStateListener (this);
 	}
 	
 	// Update is called once per frame
@@ -91,6 +93,19 @@ public class GameState : MonoBehaviour {
 		}
 	}
 	
+	#region IGameStateListener implementation
+	public void OnGameStateChange (GameStates oldStates, GameStates newState)
+	{
+		if (newState == GameStates.Intro) {
+			audio.clip = IntroMusic;
+			audio.Play ();
+		} else if (newState == GameStates.Planning) {
+			audio.clip =GameMusic;
+			audio.loop = true;
+			audio.Play();
+		}
+	}
+	#endregion
 }
 
 public interface IGameStateListener{

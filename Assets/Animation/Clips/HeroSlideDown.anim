@@ -18,12 +18,12 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: .0500000007
+      - time: 9.9333334
         value: 3
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 2
+      - time: 11.8833332
         value: 3
         inSlope: 0
         outSlope: 0
@@ -37,20 +37,20 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: 0
+      - time: 9.88333321
         value: 171.700012
-        inSlope: -81.0003662
-        outSlope: -81.0003662
+        inSlope: -81.0000534
+        outSlope: -81.0000534
         tangentMode: 10
-      - time: .0500000007
+      - time: 9.9333334
         value: 167.649994
-        inSlope: -127.846336
-        outSlope: -127.846336
+        inSlope: -127.846191
+        outSlope: -127.846191
         tangentMode: 10
-      - time: 2
+      - time: 11.8833332
         value: -173
-        inSlope: -174.692307
-        outSlope: -174.692307
+        inSlope: -174.692322
+        outSlope: -174.692322
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -82,7 +82,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 2.5
+    m_StopTime: 15.0333338
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -100,12 +100,12 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: .0500000007
+      - time: 9.9333334
         value: 3
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 2
+      - time: 11.8833332
         value: 3
         inSlope: 0
         outSlope: 0
@@ -119,20 +119,20 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: 0
+      - time: 9.88333321
         value: 171.700012
-        inSlope: -81.0003662
-        outSlope: -81.0003662
+        inSlope: -81.0000534
+        outSlope: -81.0000534
         tangentMode: 10
-      - time: .0500000007
+      - time: 9.9333334
         value: 167.649994
-        inSlope: -127.846336
-        outSlope: -127.846336
+        inSlope: -127.846191
+        outSlope: -127.846191
         tangentMode: 10
-      - time: 2
+      - time: 11.8833332
         value: -173
-        inSlope: -174.692307
-        outSlope: -174.692307
+        inSlope: -174.692322
+        outSlope: -174.692322
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -142,7 +142,7 @@ AnimationClip:
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_Events:
-  - time: 2.5
+  - time: 15.0333338
     functionName: SlidedDown
     data: 
     objectReferenceParameter: {fileID: 0}

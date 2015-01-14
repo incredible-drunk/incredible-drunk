@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CameraFollow : MonoBehaviour 
+public class CameraFollow : MonoBehaviour , IGameStateListener
 {
 	public float xMargin = 2f;		// Distance in the x axis the player can move before the camera follows.
 	public float yMargin = 2f;		// Distance in the y axis the player can move before the camera follows.
@@ -16,13 +16,15 @@ public class CameraFollow : MonoBehaviour
 	private float screenWidth;
 	private float screenHeight;
 	private Camera camera;
+	private GameState gameState;
 	
 	private float mapX;
 	private float mapY;
 	
 	void Awake ()
 	{
-		
+		gameState = GameObject.Find ("GameState").GetComponent<GameState>();
+		gameState.RegisterGameStateListener (this);
 	}
 	
 	void Start() {
@@ -37,7 +39,9 @@ public class CameraFollow : MonoBehaviour
 	
 	void Update ()
 	{
-		MouseWatch();
+		if (gameState.State == GameStates.Planning || gameState.State == GameStates.Simulation) {
+			MouseWatch ();
+		}
 	}
 	
 	
@@ -86,4 +90,15 @@ public class CameraFollow : MonoBehaviour
 		
 		
 	}
+
+	#region IGameStateListener implementation
+
+	public void OnGameStateChange (GameStates oldStates, GameStates newState)
+	{
+		if(newState == GameStates.Intro){
+			GetComponent<Animator>().SetTrigger("IntroStartT");
+		}
+	}
+
+	#endregion
 }
