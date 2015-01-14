@@ -66,6 +66,14 @@ TagManager:
     userID: 2
     uniqueID: 1535931219
     locked: 0
+  - name: BackgroundProps
+    userID: 6
+    uniqueID: 1719146857
+    locked: 0
+  - name: BackgroundOnSidewalk
+    userID: 7
+    uniqueID: 1012270165
+    locked: 0
   - name: Character
     userID: 4
     uniqueID: 2511236001

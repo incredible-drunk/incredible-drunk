@@ -97,6 +97,8 @@ public class CameraFollow : MonoBehaviour , IGameStateListener
 	{
 		if(newState == GameStates.Intro){
 			GetComponent<Animator>().SetTrigger("IntroStartT");
+		}else if(newState == GameStates.Planning){
+			GetComponent<Animator>().enabled = false;
 		}
 	}
 
