@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: b8cc3920de85db2458c7a8c50c6beab4
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Opilec Rozmd z hovna_00011
+    21300002: Opilec Rozmd z hovna_00012
+    21300004: Opilec Rozmd z hovna_00013
+    21300006: Opilec Rozmd z hovna_00014
+    21300008: Opilec Rozmd z hovna_00015
+    21300010: Opilec Rozmd z hovna_00016
+    21300012: Opilec Rozmd z hovna_00017
+    21300014: Opilec Rozmd z hovna_00018
+    21300016: Opilec Rozmd z hovna_00019
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Opilec Rozmd z hovna_00011
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 355
+        width: 361
+        height: 667
+      alignment: 9
+      pivot: {x: .542936265, y: .608695626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec Rozmd z hovna_00012
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 451
+        width: 476
+        height: 571
+      alignment: 9
+      pivot: {x: .573529422, y: .711033285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec Rozmd z hovna_00013
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 536
+        width: 556
+        height: 486
+      alignment: 9
+      pivot: {x: .517985582, y: .835390925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec Rozmd z hovna_00014
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 72
+        width: 597
+        height: 377
+      alignment: 9
+      pivot: {x: .510887802, y: 1.07692313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec Rozmd z hovna_00015
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 629
+        height: 281
+      alignment: 9
+      pivot: {x: .51510334, y: 1.44483984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec Rozmd z hovna_00016
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 749
+        width: 644
+        height: 273
+      alignment: 9
+      pivot: {x: .503105581, y: 1.48717952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec Rozmd z hovna_00017
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 476
+        width: 644
+        height: 271
+      alignment: 9
+      pivot: {x: .503105581, y: 1.498155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec Rozmd z hovna_00018
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 476
+        width: 644
+        height: 271
+      alignment: 9
+      pivot: {x: .503105581, y: 1.498155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec Rozmd z hovna_00019
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 476
+        width: 644
+        height: 271
+      alignment: 9
+      pivot: {x: .503105581, y: 1.498155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
