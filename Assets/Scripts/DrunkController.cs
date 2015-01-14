@@ -27,6 +27,7 @@ public class DrunkController : MonoBehaviour {
 		anims.Add ("Tdrink");
 		anims.Add ("Thead");
 		anims.Add ("Tbend");
+		anims.Add ("Tscratch");
 
         anim = GetComponent<Animator>();
 	}
@@ -56,7 +57,7 @@ public class DrunkController : MonoBehaviour {
 	private void PlayIdle(){
 		if (Time.time >= nextIdle) {
 			if (gameState.State == GameStates.Planning || gameState.State == GameStates.Intro) {
-				int random = Random.Range(0,anims.Count-1);
+				int random = Random.Range(0,anims.Count);
 				
 			    string pickedAnimT = anims.ToArray()[random];
 				Debug.Log("Playing idle " + pickedAnimT);
