@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 412764}
   - 61: {fileID: 6112764}
+  - 114: {fileID: 11408868}
   m_Layer: 0
   m_Name: BurgerDetector
   m_TagString: Untagged
@@ -112,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.680380702, y: -.121521711, z: 0}
+  m_LocalPosition: {x: 1.87940919, y: .480503201, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 475678}
@@ -143,9 +144,9 @@ BoxCollider2D:
   m_GameObject: {fileID: 112764}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: .789227545, y: 1.0766449}
-  m_Center: {x: -.105386138, y: -.0383224487}
+  m_IsTrigger: 1
+  m_Size: {x: .126962364, y: 1.0766449}
+  m_Center: {x: -.436518669, y: -.0383224487}
 --- !u!61 &6175678
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -194,6 +195,18 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11408868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4ea3ffeac6994869bb41cdc23c0fc3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Burger: {fileID: 0}
 --- !u!114 &11464090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -221,6 +234,7 @@ MonoBehaviour:
   MoveSpeed: 1
   SpotCatSpeed: 3
   MinDistanceToCat: 3.5999999
+  BurgerEatingTime: 2
 --- !u!212 &21275678
 SpriteRenderer:
   m_ObjectHideFlags: 1

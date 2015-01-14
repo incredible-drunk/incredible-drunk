@@ -7,6 +7,7 @@ public class ShitController : MonoBehaviour
     private Animator anim;
 	private ShitSpawner shitSpawner;
 	public Transform ShitPoint;
+	public bool IsAfterShit = false;
     // Use this for initialization
     void Start()
     {
@@ -30,9 +31,14 @@ public class ShitController : MonoBehaviour
 		shitSpawner.SpawnShitAtPoint (ShitPoint.position);
     }
 
-    private void takeShit()
+    public void takeShit()
     {
         anim.SetTrigger("takePoo");
     }
+
+	public void AfterShit(){
+		IsAfterShit = true;
+	}
+
 }
  
