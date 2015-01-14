@@ -2,6 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 
+public enum DrunkState{
+	Normal,
+	InDeepShit,
+	Rozmrd
+}
+
 public class DrunkController : MonoBehaviour {
 
 	public float speed = 1f;
@@ -12,6 +18,9 @@ public class DrunkController : MonoBehaviour {
 	private List<string> anims = new List<string> ();
 
 	private GameState gameState;
+	private DrunkState State = DrunkState.Normal;
+	public float ShitClearingTime = 5;
+	private float shitCleanedTime; 
 
     private Animator anim;
 
@@ -71,8 +80,14 @@ public class DrunkController : MonoBehaviour {
 	void FixedUpdate () {
 		PlayIdle ();
 		if (gameState.State == GameStates.Simulation) {
-			rigidbody2D.velocity = new Vector2(transform.localScale.x * speed, rigidbody2D.velocity.y);
-            Walk();
+			if(State == DrunkState.Normal){
+				rigidbody2D.velocity = new Vector2(transform.localScale.x * speed, rigidbody2D.velocity.y);
+	            Walk();
+			}else if(State == DrunkState.InDeepShit){
+				if(shitCleanedTime < Time.time){
+					SetpOutOfShit();
+				}
+			}
 		}
 
 		if (transform.position.x > gameState.PlayableAreaMaxX) {
@@ -110,4 +125,36 @@ public class DrunkController : MonoBehaviour {
     private void Stop() {
         anim.SetTrigger("Tstop");
     }
+
+	private void StepInShit(){
+		State = DrunkState.InDeepShit;
+		anim.ResetTrigger("Twalk");
+		anim.SetTrigger("Tshit");
+		shitCleanedTime = Time.time + ShitClearingTime;
+	}
+
+	private void SetpOutOfShit(){
+
+		anim.SetTrigger("Twalk");
+		anim.ResetTrigger("Tshit");
+		Invoke ("SteppedOutOfShit", 1f);
+
+	}
+	public void SteppedOutOfShit(){
+		if (State != DrunkState.Rozmrd) {
+			State = DrunkState.Normal;
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		
+		if(other.gameObject != null && other.gameObject.tag == "DogShit" && State == DrunkState.Normal){
+			Debug.Log("Stepped in shit");
+			StepInShit();
+			
+		}
+		
+	}
+
+
 }

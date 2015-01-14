@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.62364912, y: .879020393, z: 0}
+  m_LocalPosition: {x: -.479999989, y: .569999993, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +42,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -56,8 +56,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2, y: 2.70666671}
-  m_Center: {x: .100000001, y: 0}
+  m_Size: {x: .810867488, y: 2.70666671}
+  m_Center: {x: .00410270691, y: 0}
 --- !u!95 &9593876
 Animator:
   serializedVersion: 3
@@ -87,6 +87,7 @@ MonoBehaviour:
   speed: 1
   minSecondsBetweenIdle: 3
   maxSecondsBetweenIdle: 10
+  ShitClearingTime: 5
 --- !u!212 &21262412
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -106,7 +107,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 2511236001
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: f5ef24c2960e5584ba66fae52c297d29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

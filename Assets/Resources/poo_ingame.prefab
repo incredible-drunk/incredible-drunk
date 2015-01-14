@@ -10,8 +10,7 @@ GameObject:
   - 4: {fileID: 442142}
   - 50: {fileID: 5042144}
   - 61: {fileID: 6142144}
-  - 111: {fileID: 11142144}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: poo_ingame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,9 +26,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 442144}
   - 212: {fileID: 21242144}
-  m_Layer: 0
+  - 61: {fileID: 6109064}
+  m_Layer: 14
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: DogShit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.27000046, y: -1.28999996, z: 0}
+  m_LocalPosition: {x: 2.14715648, y: -.841234505, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 442144}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -.0170000009, y: -.25999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 442142}
@@ -74,6 +74,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!61 &6109064
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142144}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .247377813, y: .34616375}
+  m_Center: {x: .282443553, y: .150251448}
 --- !u!61 &6142144
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -83,23 +94,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .829989195, y: .093480587}
-  m_Center: {x: -.00500011444, y: -.0107495785}
---- !u!111 &11142144
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142142}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ea5a58767ccc245fb95fd2676956e7b5, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: ea5a58767ccc245fb95fd2676956e7b5, type: 2}
-  m_WrapMode: 2
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 1
-  m_CullingType: 0
+  m_Size: {x: .829989195, y: .26684761}
+  m_Center: {x: -.00500011444, y: -.0974330306}
 --- !u!212 &21242144
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -118,7 +114,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 1024582385
+  m_SortingLayerID: 2511236001
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5cab917e6c2544c78873a7f0ac2c03bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

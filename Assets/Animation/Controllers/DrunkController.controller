@@ -240,6 +240,46 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110138968
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110270782}
+  m_DstState: {fileID: 110221230}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Twalk
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110139942
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110232544}
+  m_DstState: {fileID: 110249188}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Tshit
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110156946
 Transition:
   serializedVersion: 2
@@ -254,6 +294,26 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: Tpoint
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110161206
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110221230}
+  m_DstState: {fileID: 110232544}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
     m_EventTreshold: 0
     m_ExitTime: 1
   m_Atomic: 1
@@ -380,26 +440,6 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1101 &110186414
-Transition:
-  serializedVersion: 2
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_SrcState: {fileID: 110270782}
-  m_DstState: {fileID: 110232544}
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: Twalk
-    m_EventTreshold: 0
-    m_ExitTime: 1
-  m_Atomic: 1
-  m_Solo: 0
-  m_Mute: 0
-  m_CanTransitionToSelf: 0
 --- !u!1101 &110189604
 Transition:
   serializedVersion: 2
@@ -502,6 +542,21 @@ State:
   - {fileID: 7400000, guid: 5146fc4061317b34e9b92542046810f9, type: 2}
   m_ParentStateMachine: {fileID: 110721018}
   m_Position: {x: -336, y: -84, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110221230
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: drunk_shit_reverse
+  m_Speed: -1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 397a33b6ba907744c9c14b6397fe1d3a, type: 2}
+  m_ParentStateMachine: {fileID: 110721018}
+  m_Position: {x: 312, y: 0, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -645,14 +700,19 @@ StateMachine:
   - {fileID: 110249188}
   - {fileID: 110270782}
   - {fileID: 110216292}
+  - {fileID: 110221230}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
+      first: {fileID: 110221230}
+      second:
+      - {fileID: 110161206}
+    data:
       first: {fileID: 110270782}
       second:
-      - {fileID: 110186414}
       - {fileID: 110122454}
+      - {fileID: 110138968}
     data:
       first: {fileID: 110249188}
       second:
@@ -676,6 +736,7 @@ StateMachine:
       first: {fileID: 110232544}
       second:
       - {fileID: 110179768}
+      - {fileID: 110139942}
     data:
       first: {fileID: 110283918}
       second:
