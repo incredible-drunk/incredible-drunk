@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class ItemSoundBank : MonoBehaviour {
 	public AudioClip[] ProtagonistCommentary;
-	public AudioClip DrunkCommentary;
+	public AudioClip[] DrunkCommentary;
 	public AudioClip SpawnClip;
 	protected int protagonistCommentaryCount = 0;
 

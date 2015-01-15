@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.18984246, y: 1.57472932, z: 0}
+  m_LocalPosition: {x: 3.99000001, y: -.939999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 464324}
@@ -144,7 +144,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8299493a3cceea44ca1fef3300b0899f, type: 3}
   - {fileID: 8300000, guid: 3cd261d14be55414097bd4248ee1da31, type: 3}
   - {fileID: 8300000, guid: 9ea6b84617b107945a474f5a501f86c2, type: 3}
-  DrunkCommentary: {fileID: 8300000, guid: 3130adc5c11f5ab40b1b1bd542a2c4e9, type: 3}
+  DrunkCommentary:
+  - {fileID: 8300000, guid: 2c2cb03c406b57145bd3afe873484bd5, type: 3}
+  - {fileID: 8300000, guid: 6527c0a87b5839d458bb83385199b8ad, type: 3}
+  - {fileID: 8300000, guid: 408927f97503da7408c5e24ee962fa93, type: 3}
   SpawnClip: {fileID: 0}
 --- !u!114 &11462840
 MonoBehaviour:

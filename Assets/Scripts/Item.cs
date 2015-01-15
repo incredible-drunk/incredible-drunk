@@ -11,6 +11,7 @@ public class Item  {
 	public GameObject InGameObjectPrefab;
 	public ItemSoundBank SoundBank;
 	protected int protagonistSpeechCounter = 0;
+	protected int drunkSpeechCounter = 0;
 
 
 	// Use this for initialization
@@ -43,6 +44,19 @@ public class Item  {
 		if (protagonistSpeechCounter < SoundBank.ProtagonistCommentary.Length-1) {
 			
 			protagonistSpeechCounter = protagonistSpeechCounter+1;
+		}
+		return clip;
+	}
+
+	public AudioClip GetNextDrunkClip(){
+		if (SoundBank.DrunkCommentary == null || SoundBank.DrunkCommentary.Length == 0) {
+			return null;		
+		}
+		var clip = SoundBank.DrunkCommentary[drunkSpeechCounter];
+		Debug.Log ("Retturning clip " + clip.name + " : " + drunkSpeechCounter); 
+		if (drunkSpeechCounter < SoundBank.DrunkCommentary.Length-1) {
+			
+			drunkSpeechCounter = drunkSpeechCounter+1;
 		}
 		return clip;
 	}

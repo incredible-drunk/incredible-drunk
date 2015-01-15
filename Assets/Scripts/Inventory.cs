@@ -90,7 +90,7 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 			delta = audioSource.clip.length - audioSource.time + 0.5f;
 		}
 		if (item.SoundBank != null) {
-						drunk.GetComponent<DrunkController> ().CommentOnPlacement (item.SoundBank.DrunkCommentary, delta);
+						drunk.GetComponent<DrunkController> ().CommentOnPlacement (item.GetNextDrunkClip(), delta);
 		} else {
 			Debug.Log ("No soundbank for drunk to comment on " + item.Name);
 		}
