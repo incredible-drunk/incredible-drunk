@@ -43,7 +43,7 @@ public class Cat : ItemIngameScript {
 			this.rigidbody2D.velocity = new Vector2(sign*(float)4.6,(float)10);
 			if(JumpSound != null){
 				if(soundPlayed){
-					auidoSource.volume = 0.2f;
+					auidoSource.volume = 0.1f;
 				}
 				auidoSource.PlayOneShot(JumpSound);
 				soundPlayed = true;
