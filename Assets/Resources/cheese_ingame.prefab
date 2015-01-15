@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.88468313, y: -4.13365221, z: 0}
+  m_LocalPosition: {x: 2.1377058, y: -.552195549, z: 0}
   m_LocalScale: {x: .735499263, y: .735499859, z: .735499859}
   m_Children:
   - {fileID: 488812}
@@ -83,7 +83,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 188812}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Size: {x: 1.15199995, y: 1.15199995}
   m_Center: {x: 0, y: 0}
 --- !u!61 &6188814
@@ -95,8 +95,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.07688951, y: .223376274}
-  m_Center: {x: .00432538986, y: -.325579166}
+  m_Size: {x: 1.07688951, y: .177426904}
+  m_Center: {x: .00432525109, y: -.0843429789}
 --- !u!114 &11462302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,11 +112,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c1d37a86ce55d804ea9225e1cd6598d2, type: 3}
   - {fileID: 8300000, guid: 2a6dec76588480e4f93192d4d9b3250e, type: 3}
   - {fileID: 8300000, guid: 0640ffb245a6d454995b34ff0c55b4ab, type: 3}
-  DrunkCommentary:
-  - {fileID: 8300000, guid: bc1a2f4785457c54483ecb2f7e8f0149, type: 3}
-  - {fileID: 8300000, guid: 56013db43ff66a544a6259fdcc9ad3ec, type: 3}
-  - {fileID: 8300000, guid: 60b51c1f7a0e98c4084098847895173e, type: 3}
-  - {fileID: 8300000, guid: f9a2d69dd12cc4847a5d532a5d90be50, type: 3}
+  DrunkCommentary: {fileID: 8300000, guid: db7a2cc51b6cc6140aaed854b1335d4c, type: 3}
   SpawnClip: {fileID: 0}
 --- !u!212 &21288810
 SpriteRenderer:

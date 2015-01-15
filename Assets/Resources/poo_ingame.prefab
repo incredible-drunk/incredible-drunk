@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 442142}
   - 50: {fileID: 5042144}
   - 61: {fileID: 6142144}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: poo_ingame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.98999977, y: -.790000021, z: 0}
+  m_LocalPosition: {x: -.640342712, y: -.19000119, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 442144}

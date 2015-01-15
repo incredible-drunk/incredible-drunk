@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 406408}
   - 61: {fileID: 6106406}
   - 114: {fileID: 11406406}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Blades
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -37,7 +37,7 @@ AudioSource:
   m_GameObject: {fileID: 153732}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 7fe79f4e367b34b3b9656c0cba1fd7eb, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: .219999999
   m_Pitch: 1
@@ -98,14 +98,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f5fe2982a2c49fcbc08e7cbbe771c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
+  State: 0
   GameStateTextUi: {fileID: 0}
   GameStateButton: {fileID: 0}
   GameResetButton: {fileID: 0}
   PlayableAreaMinY: -1.13
   PlayableAreaMaxY: 8.75
-  PlayableAreaMinX: -7.30999994
+  PlayableAreaMinX: -8.19999981
   PlayableAreaMaxX: 12.0699997
+  IntroMusic: {fileID: 8300000, guid: 85d81d8a1c0b04d9b8a0b0a43573f868, type: 3}
+  GameMusic: {fileID: 8300000, guid: 7fe79f4e367b34b3b9656c0cba1fd7eb, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

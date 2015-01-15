@@ -52,12 +52,13 @@ public class Item  {
 		if (SoundBank.DrunkCommentary == null || SoundBank.DrunkCommentary.Length == 0) {
 			return null;		
 		}
-		var clip = SoundBank.DrunkCommentary[drunkSpeechCounter];
+		var clip = SoundBank.DrunkCommentary[drunkSpeechCounter%SoundBank.DrunkCommentary.Length];
 		Debug.Log ("Retturning clip " + clip.name + " : " + drunkSpeechCounter); 
-		if (drunkSpeechCounter < SoundBank.DrunkCommentary.Length-1) {
-			
-			drunkSpeechCounter = drunkSpeechCounter+1;
-		}
+		drunkSpeechCounter++;
+//		if (drunkSpeechCounter < SoundBank.DrunkCommentary.Length-1) {
+//			
+//			drunkSpeechCounter = drunkSpeechCounter+1;
+//		}
 		return clip;
 	}
 
