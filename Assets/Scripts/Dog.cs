@@ -77,9 +77,9 @@ public class Dog : ItemIngameScript {
 		Vector2 vectorToCat = sensedCat.rigidbody2D.position - this.rigidbody2D.position;
 		if(vectorToCat.magnitude < MinDistanceToCat){
 			if(Math.Abs(vectorToCat.x) > 0.2){				
-				if(vectorToCat.x < 0 && transform.localScale.x < 0){
+				if(vectorToCat.x > 0 && transform.localScale.x < 0){
 					Flip();
-				}else if(vectorToCat.x > 0 && transform.localScale.x > 0){
+				}else if(vectorToCat.x < 0 && transform.localScale.x > 0){
 					Flip ();
 				}
 				rigidbody2D.velocity = new Vector2(transform.localScale.x * SpotCatSpeed, rigidbody2D.velocity.y);
