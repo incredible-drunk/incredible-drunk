@@ -20,6 +20,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: eat
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -72,6 +78,26 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
+--- !u!1101 &110145000
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110296696}
+  m_DstState: {fileID: 110247708}
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: 1
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
 --- !u!1101 &110163746
 Transition:
   serializedVersion: 2
@@ -86,6 +112,26 @@ Transition:
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: takePoo
+    m_EventTreshold: 0
+    m_ExitTime: .75
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110189672
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110247708}
+  m_DstState: {fileID: 110296696}
+  m_TransitionDuration: .25
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: eat
     m_EventTreshold: 0
     m_ExitTime: .75
   m_Atomic: 1
@@ -157,6 +203,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110296696
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: DogEating
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: c6dba2fa3e3adea41b41b0af828393a4, type: 2}
+  m_ParentStateMachine: {fileID: 110781994}
+  m_Position: {x: 156, y: 0, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1107 &110781994
 StateMachine:
   serializedVersion: 2
@@ -169,22 +230,28 @@ StateMachine:
   - {fileID: 110278800}
   - {fileID: 110247708}
   - {fileID: 110270162}
+  - {fileID: 110296696}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110270162}
+      first: {fileID: 110296696}
       second:
-      - {fileID: 110163746}
+      - {fileID: 110145000}
     data:
       first: {fileID: 110247708}
       second:
       - {fileID: 110194346}
       - {fileID: 110125062}
+      - {fileID: 110189672}
     data:
       first: {fileID: 110278800}
       second:
       - {fileID: 110132124}
+    data:
+      first: {fileID: 110270162}
+      second:
+      - {fileID: 110163746}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 60, y: 108, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

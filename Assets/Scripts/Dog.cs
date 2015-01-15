@@ -39,14 +39,16 @@ public class Dog : ItemIngameScript {
 		if (gameState.State == GameStates.Simulation) {
 			if(burgerDetector.Burger != null && eatingBurger == false){
 				eatingBurger = true;
+                var animator = gameObject.GetComponentInChildren<Animator>();
+                animator.SetTrigger("eat");
 				Destroy(burgerDetector.Burger,BurgerEatingTime);
+                burgerDetector.Burger = null;
 				Invoke("BurgerEaten",BurgerEatingTime);
 			}
 			if(eatingBurger == false){
 				if(sensedCat == null ){
-					CheeseBehavior();
+					BurgerBehaviour();
 				}else{
-
 					CatBehavior();
 				}
 			}else if(shitController.IsAfterShit){
@@ -57,24 +59,17 @@ public class Dog : ItemIngameScript {
         anim.SetFloat("currentVelocity", Mathf.Abs(rigidbody2D.velocity.x));
 	}
 	public void BurgerEaten(){
+
 		if (this.gameObject.activeSelf && gameState.State == GameStates.Simulation) {
 			shitController.takeShit ();
 		}
 	}
 	void AfterShitBehavior(){
-		Vector2 vectorToGoAway = new Vector2(99999,this.rigidbody2D.position.y) - this.rigidbody2D.position;
-		if(vectorToGoAway.magnitude > 0){
-			if(Math.Abs(vectorToGoAway.x) > 0.2){				
-				if(vectorToGoAway.x < 0 && transform.localScale.x > 0){
-					Flip();
-				}else if(vectorToGoAway.x > 0 && transform.localScale.x < 0){
-					Flip ();
-				}
-				rigidbody2D.velocity = new Vector2(transform.localScale.x * SpotCatSpeed, rigidbody2D.velocity.y);
-			}
-		}else {//if(vectorToCat.magnitude > MinDistanceToCat + 10){
-			sensedCat = null;
+        sensedCat = null;
+		if(transform.localScale.x < 0) {
+			Flip ();
 		}
+        rigidbody2D.velocity = new Vector2(transform.localScale.x * SpotCatSpeed, rigidbody2D.velocity.y);
 	}
 
 
@@ -94,10 +89,10 @@ public class Dog : ItemIngameScript {
 		}
 	}
 
-	void CheeseBehavior(){
-		GameObject cheese =    (GameObject) GameObject.FindGameObjectWithTag("Burger");
-		if(cheese != null && cheese.rigidbody2D != null){
-			Vector2 vectorToCheese = cheese.rigidbody2D.position - this.rigidbody2D.position;
+	void BurgerBehaviour(){
+		GameObject burger =    (GameObject) GameObject.FindGameObjectWithTag("Burger");
+		if(burger != null && burger.rigidbody2D != null){
+			Vector2 vectorToCheese = burger.rigidbody2D.position - this.rigidbody2D.position;
 			if(Math.Abs(vectorToCheese.x) > 0.1){				
 				if(vectorToCheese.x < 0 && transform.localScale.x > 0){
 					Flip();
@@ -126,9 +121,9 @@ public class Dog : ItemIngameScript {
 	public void Flip()
 	{
 		// Multiply the x component of localScale by -1.
-		Vector3 enemyScale = transform.localScale;
-		enemyScale.x *= -1;
-		transform.localScale = enemyScale;
+		Vector3 myScale = transform.localScale;
+		myScale.x *= -1;
+		transform.localScale = myScale;
 	}
 
 	public void Kill(){

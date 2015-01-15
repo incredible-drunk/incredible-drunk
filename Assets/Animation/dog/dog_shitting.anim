@@ -113,7 +113,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.33333325
+  - time: 2.25
     functionName: AfterShit
     data: 
     objectReferenceParameter: {fileID: 0}
