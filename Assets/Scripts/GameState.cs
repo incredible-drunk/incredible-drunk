@@ -35,6 +35,7 @@ public class GameState : MonoBehaviour, IGameStateListener {
 		if (!initialized) {
 			SetNewGameState(State);
 			initialized = true;
+			Random.seed = (int)System.DateTime.Now.Ticks;
 		}
 	}
 
