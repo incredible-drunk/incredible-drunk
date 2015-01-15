@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 427488}
   - 212: {fileID: 21227488}
   - 50: {fileID: 5089086}
-  - 95: {fileID: 9592824}
   m_Layer: 19
   m_Name: punto
   m_TagString: Untagged
