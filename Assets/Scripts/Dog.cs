@@ -39,6 +39,8 @@ public class Dog : ItemIngameScript {
 		if (gameState.State == GameStates.Simulation) {
 			if(burgerDetector.Burger != null && eatingBurger == false){
 				eatingBurger = true;
+                var animator = gameObject.GetComponentInChildren<Animator>();
+                animator.SetTrigger("eat");
 				Destroy(burgerDetector.Burger,BurgerEatingTime);
 				Invoke("BurgerEaten",BurgerEatingTime);
 			}
