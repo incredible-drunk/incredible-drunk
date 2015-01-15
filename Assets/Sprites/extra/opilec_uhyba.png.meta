@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 0c14cc93de5fa244abb65df75048d140
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Opilec uskocny_00003
+    21300002: Opilec uskocny_00004
+    21300004: Opilec uskocny_00005
+    21300006: Opilec uskocny_00006
+    21300008: Opilec uskocny_00007
+    21300010: Opilec uskocny_00008
+    21300012: Opilec uskocny_00009
+    21300014: Opilec uskocny_00010
+    21300016: Opilec uskocny_00011
+    21300018: Opilec uskocny_00012
+    21300020: Opilec uskocny_00013
+    21300022: Opilec uskocny_00014
+    21300024: Opilec uskocny_00015
+    21300026: Opilec uskocny_00016
+    21300028: Opilec uskocny_00017
+    21300030: Opilec uskocny_00018
+    21300032: Opilec uskocny_00019
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Opilec uskocny_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 482
+        width: 278
+        height: 779
+      alignment: 9
+      pivot: {x: .615107894, y: .505776644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00004
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1325
+        width: 295
+        height: 721
+      alignment: 9
+      pivot: {x: .633898318, y: .552011073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00005
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 737
+        width: 333
+        height: 653
+      alignment: 9
+      pivot: {x: .672672689, y: .612557411}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00006
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 219
+        width: 379
+        height: 584
+      alignment: 9
+      pivot: {x: .707123995, y: .67979455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00007
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 1442
+        width: 383
+        height: 604
+      alignment: 9
+      pivot: {x: .707571805, y: .657284796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00008
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 805
+        width: 400
+        height: 613
+      alignment: 9
+      pivot: {x: .75, y: .63458401}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00009
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 5
+        width: 405
+        height: 631
+      alignment: 9
+      pivot: {x: .809876561, y: .583201289}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00010
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1392
+        width: 374
+        height: 654
+      alignment: 9
+      pivot: {x: .85561496, y: .539755344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00011
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1399
+        width: 371
+        height: 647
+      alignment: 9
+      pivot: {x: .862533689, y: .534775913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00012
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 758
+        width: 379
+        height: 639
+      alignment: 9
+      pivot: {x: .844327152, y: .530516446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00013
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 1420
+        width: 383
+        height: 626
+      alignment: 9
+      pivot: {x: .8328982, y: .522364199}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00014
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 136
+        width: 365
+        height: 620
+      alignment: 9
+      pivot: {x: .775342464, y: .533870995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00015
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 93
+        width: 397
+        height: 642
+      alignment: 9
+      pivot: {x: .743073046, y: .515576303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00016
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 638
+        width: 349
+        height: 685
+      alignment: 9
+      pivot: {x: .679083109, y: .510948896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00017
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 550
+        width: 283
+        height: 729
+      alignment: 9
+      pivot: {x: .604240298, y: .504801095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00018
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1281
+        width: 268
+        height: 765
+      alignment: 9
+      pivot: {x: .608208954, y: .505882382}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec uskocny_00019
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1263
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
