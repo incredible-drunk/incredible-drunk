@@ -790,7 +790,7 @@ Prefab:
       objectReference: {fileID: 585737933}
     - target: {fileID: 11453732, guid: 906428306e48c4a8fb1b347b4b6cb3bc, type: 2}
       propertyPath: State
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 906428306e48c4a8fb1b347b4b6cb3bc, type: 2}
@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f5fe2982a2c49fcbc08e7cbbe771c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 1
+  State: 0
   GameOverUI: {fileID: 734505452}
   GameStateTextUi: {fileID: 131675607}
   GameStateButton: {fileID: 907833234}
