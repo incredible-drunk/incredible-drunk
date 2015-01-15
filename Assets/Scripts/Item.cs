@@ -8,6 +8,7 @@ public class Item  {
 	public string Description;
 	public string ID;
 	public Sprite Icon;
+	public Sprite DragIcon;
 	public GameObject InGameObjectPrefab;
 	public ItemSoundBank SoundBank;
 	protected int protagonistSpeechCounter = 0;
@@ -30,6 +31,7 @@ public class Item  {
 		this.ID = id;
 		this.Description = description;
 		this.Icon = Resources.Load<Sprite> (id.ToLower()+"_item");
+		this.DragIcon = Resources.Load<Sprite> (id.ToLower()+"_drag");
 		this.InGameObjectPrefab = Resources.Load<GameObject> (id.ToLower()+"_ingame");
 		if (this.InGameObjectPrefab != null) {
 			SoundBank = this.InGameObjectPrefab.GetComponent<ItemSoundBank>();

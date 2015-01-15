@@ -136,9 +136,8 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
 	private void ShowDraggedItemImage(Item item){
 		this.DraggedItemImage.SetActive (true);
-		this.DraggedItemImage.GetComponent<Image>().sprite = item.Icon;
+		this.DraggedItemImage.GetComponent<Image> ().sprite = item.DragIcon;
 	}
-
 	void addItem(string itemId){
 		var item = databse.Items[itemId];
 		GameObject slot = FindFirstEmptySlot ();
