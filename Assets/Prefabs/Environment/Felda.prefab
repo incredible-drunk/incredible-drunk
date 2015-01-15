@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21200002}
   - 95: {fileID: 9500000}
   - 50: {fileID: 5000000}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Felda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 447740}
   - 212: {fileID: 21247740}
-  m_Layer: 0
+  - 50: {fileID: 5073420}
+  - 235: {fileID: 23573420}
+  - 58: {fileID: 5873420}
+  m_Layer: 19
   m_Name: felicie-kolo-f
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +46,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 447742}
   - 212: {fileID: 21247742}
-  m_Layer: 0
+  - 58: {fileID: 5873418}
+  - 50: {fileID: 5073418}
+  - 235: {fileID: 23573418}
+  m_Layer: 19
   m_Name: felicie-kolo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +63,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.22163963, y: 1.91067517, z: 0}
+  m_LocalPosition: {x: -21.6180401, y: 6.08043718, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 447742}
@@ -94,15 +100,67 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mass: 1
+  m_Mass: .5
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!50 &5073418
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147742}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5073420
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147740}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!58 &5873418
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147742}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .529999971
+  m_Center: {x: 0, y: 0}
+--- !u!58 &5873420
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147740}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .529999971
+  m_Center: {x: 0, y: 0}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -110,7 +168,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bd50a4200ebebcc4fb21af3a0d6cd874, type: 2}
   m_CullingMode: 1
@@ -184,6 +242,46 @@ SpriteRenderer:
   m_SortingOrder: 301
   m_Sprite: {fileID: 21300002, guid: 014bb622fe201ba42a399d5a89a8213a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!235 &23573418
+WheelJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147742}
+  m_Enabled: 1
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 5000000}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -2.28999901, y: -1.01999998}
+  m_Suspension:
+    serializedVersion: 2
+    m_DampingRatio: .899999976
+    m_Frequency: 10
+    m_Angle: 90
+  m_UseMotor: 0
+  m_Motor:
+    m_MotorSpeed: 100
+    m_MaximumMotorForce: 10000
+--- !u!235 &23573420
+WheelJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147740}
+  m_Enabled: 1
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 5000000}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 2.53000069, y: -.889999866}
+  m_Suspension:
+    serializedVersion: 2
+    m_DampingRatio: .899999976
+    m_Frequency: 10
+    m_Angle: 90
+  m_UseMotor: 1
+  m_Motor:
+    m_MotorSpeed: 500
+    m_MaximumMotorForce: 10000
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
