@@ -98,10 +98,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f5fe2982a2c49fcbc08e7cbbe771c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  State: 0
+  State: 1
+  GameOverUI: {fileID: 0}
   GameStateTextUi: {fileID: 0}
   GameStateButton: {fileID: 0}
   GameResetButton: {fileID: 0}
+  MuteButton: {fileID: 0}
+  GameResultText: {fileID: 0}
   PlayableAreaMinY: -1.13
   PlayableAreaMaxY: 8.75
   PlayableAreaMinX: -8.19999981
