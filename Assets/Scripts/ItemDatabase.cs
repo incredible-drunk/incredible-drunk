@@ -9,13 +9,13 @@ public class ItemDatabase : MonoBehaviour {
 	public Dictionary<string,Item> Items = new Dictionary<string,Item>();
 
 	void Awake(){
-		AddItem(new Item  ("CUTTERS","Štípačky","Dokážou uštípnout co chcete."));
-		AddItem (new Item ("MOUSE","Myš","Malá, bílá, píská, má ráda sýr."));
+		AddItem(new Item  ("CUTTERS","Štípačky","Kleště značky Uštípnu Cokoli."));
+		AddItem (new Item ("MOUSE","Myš","Pravá česká modrooká."));
 		AddItem (new Item ("POO","Hovno","Opravdu velké hovno"));
-		AddItem (new Item ("CHEESE","Sýr","Sýr. Má díry a maj ho rádi myši a tak."));
-		AddItem (new Item ("CAT","Kočka","Nasraná a tlustá kočka."));	
-		AddItem (new Item ("BURGER","Zkažený Burger","Po dvou týdnech na čerstvém vzduchu je zapomenutá okurka to poslední, čím je tento burger zkažený."));	
-		AddItem (new Item ("DOG","čokl","Co sežere, to hned vysere."));
+		AddItem (new Item ("CHEESE","Sýr","Ementálek z večerky. Pro myšku, nebo k svačině."));
+		AddItem (new Item ("CAT","Kočka","Umí se zle tvářit a ráda jí myši. O dva skilly více, než průměrná městská kočka mívá."));	
+		AddItem (new Item ("BURGER","Zkažený burger","Po dvou týdnech na čerstvém vzduchu je zapomenutá okurka to poslední, čím je tento burger zkažený."));	
+		AddItem (new Item ("DOG","Rocky","Výstavní čivava paní Jedličkové. Jen ty trávicí potíže kdyby neměl..."));
 	}
 
 
