@@ -25,7 +25,7 @@ public class DrunkController : MonoBehaviour {
 	private float shitCleanedTime; 
 
 	public AudioClip RozmrdSound = null;
-	public AudioClip ShitAnnoyed = null;
+	public AudioClip[] ShitAnnoyedClips;
 	public AudioClip[] DrunkWinClips;
 	public AudioClip[] DodgeClips;
 	public AudioClip[] BragClips;
@@ -181,7 +181,10 @@ public class DrunkController : MonoBehaviour {
 		shitCleanedTime = Time.time + ShitClearingTime;
 
 		var source = GetComponent<AudioSource> ();
-		source.PlayOneShot (ShitAnnoyed);
+		Random.seed = (int)(Time.time * 1000);
+		int clipNumber = Random.Range ((int)0, ShitAnnoyedClips.Length);
+		var clip = ShitAnnoyedClips [clipNumber];
+		source.PlayOneShot (clip);
 	}
 
 	private void SetpOutOfShit(){
