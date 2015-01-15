@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 58125226357b37844bfeef3ec8cd5e82
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Opilec hovno_00000
+    21300002: Opilec hovno_00001
+    21300004: Opilec hovno_00002
+    21300006: Opilec hovno_00003
+    21300008: Opilec hovno_00004
+    21300010: Opilec hovno_00005
+    21300012: Opilec hovno_00006
+    21300014: Opilec hovno_00007
+    21300016: Opilec hovno_00008
+    21300018: Opilec hovno_00009
+    21300020: Opilec hovno_00010
+    21300022: Opilec hovno_00011
+    21300024: Opilec hovno_00012
+    21300026: Opilec hovno_00013
+    21300028: Opilec hovno_00014
+    21300030: Opilec hovno_00015
+    21300032: Opilec hovno_00016
+    21300034: Opilec hovno_00017
+    21300036: Opilec hovno_00018
+    21300038: Opilec hovno_00019
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Opilec hovno_00000
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1177
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00001
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1220
+        width: 343
+        height: 785
+      alignment: 9
+      pivot: {x: .489795923, y: .513375819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00002
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 3323
+        width: 395
+        height: 771
+      alignment: 9
+      pivot: {x: .432911396, y: .5252918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3341
+        width: 436
+        height: 753
+      alignment: 9
+      pivot: {x: .408256888, y: .537848592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00004
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2621
+        width: 391
+        height: 718
+      alignment: 9
+      pivot: {x: .478260875, y: .564066827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00005
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1962
+        width: 361
+        height: 657
+      alignment: 9
+      pivot: {x: .565096974, y: .616438329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00006
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2778
+        width: 364
+        height: 657
+      alignment: 9
+      pivot: {x: .5686813, y: .616438329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00007
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2664
+        width: 368
+        height: 657
+      alignment: 9
+      pivot: {x: .573369563, y: .616438329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00008
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 3437
+        width: 373
+        height: 657
+      alignment: 9
+      pivot: {x: .573726535, y: .616438329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00009
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 3438
+        width: 378
+        height: 656
+      alignment: 9
+      pivot: {x: .57407409, y: .617378056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00010
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 2779
+        width: 369
+        height: 657
+      alignment: 9
+      pivot: {x: .558265567, y: .616438329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00011
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 2779
+        width: 361
+        height: 656
+      alignment: 9
+      pivot: {x: .542936265, y: .617378056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00012
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 2120
+        width: 364
+        height: 657
+      alignment: 9
+      pivot: {x: .541208804, y: .616438329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00013
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 3437
+        width: 367
+        height: 657
+      alignment: 9
+      pivot: {x: .539509535, y: .616438329}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00014
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2007
+        width: 363
+        height: 655
+      alignment: 9
+      pivot: {x: .528925598, y: .618320584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00015
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 2123
+        width: 361
+        height: 654
+      alignment: 9
+      pivot: {x: .520775616, y: .619266033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00016
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 2122
+        width: 359
+        height: 654
+      alignment: 9
+      pivot: {x: .52924794, y: .619266033}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00017
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1466
+        width: 358
+        height: 655
+      alignment: 9
+      pivot: {x: .539106131, y: .618320584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00018
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1464
+        width: 357
+        height: 656
+      alignment: 9
+      pivot: {x: .549019635, y: .617378056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec hovno_00019
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1462
+        width: 354
+        height: 656
+      alignment: 9
+      pivot: {x: .556497157, y: .617378056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

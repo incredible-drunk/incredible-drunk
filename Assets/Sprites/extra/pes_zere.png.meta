@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: 3db137f42c5a5de4a8037a5517577603
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pes zere_00003
+    21300002: pes zere_00004
+    21300004: pes zere_00005
+    21300006: pes zere_00006
+    21300008: pes zere_00007
+    21300010: pes zere_00008
+    21300012: pes zere_00009
+    21300014: pes zere_00010
+    21300016: pes zere_00011
+    21300018: pes zere_00012
+    21300020: pes zere_00013
+    21300022: pes zere_00014
+    21300024: pes zere_00015
+    21300026: pes zere_00016
+    21300028: pes zere_00017
+    21300030: pes zere_00018
+    21300032: pes zere_00019
+    21300034: pes zere_00020
+    21300036: pes zere_00021
+    21300038: pes zere_00022
+    21300040: pes zere_00023
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pes zere_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 799
+        width: 515
+        height: 376
+      alignment: 9
+      pivot: {x: .489320397, y: .585106373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00004
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1681
+        width: 528
+        height: 365
+      alignment: 9
+      pivot: {x: .482954532, y: .597260296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00005
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 948
+        width: 550
+        height: 361
+      alignment: 9
+      pivot: {x: .485454559, y: .595567882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00006
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 219
+        width: 571
+        height: 356
+      alignment: 9
+      pivot: {x: .49036777, y: .589887619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00007
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 1689
+        width: 572
+        height: 357
+      alignment: 9
+      pivot: {x: .482517481, y: .591036439}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00008
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 1321
+        width: 569
+        height: 359
+      alignment: 9
+      pivot: {x: .47451669, y: .593314767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00009
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 577
+        width: 565
+        height: 361
+      alignment: 9
+      pivot: {x: .467256635, y: .595567882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00010
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 1682
+        width: 564
+        height: 364
+      alignment: 9
+      pivot: {x: .464539021, y: .596153855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00011
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 1311
+        width: 564
+        height: 365
+      alignment: 9
+      pivot: {x: .464539021, y: .597260296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00012
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 940
+        width: 560
+        height: 366
+      alignment: 9
+      pivot: {x: .467857152, y: .598360658}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00013
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1678
+        width: 567
+        height: 368
+      alignment: 9
+      pivot: {x: .462081134, y: .597826064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00014
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 428
+        width: 569
+        height: 369
+      alignment: 9
+      pivot: {x: .460456938, y: .598915994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00015
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 806
+        width: 569
+        height: 369
+      alignment: 9
+      pivot: {x: .460456938, y: .598915994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00016
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 57
+        width: 568
+        height: 369
+      alignment: 9
+      pivot: {x: .46126762, y: .598915994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00017
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 57
+        width: 566
+        height: 369
+      alignment: 9
+      pivot: {x: .462897539, y: .598915994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00018
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 435
+        width: 560
+        height: 369
+      alignment: 9
+      pivot: {x: .467857152, y: .59620595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00019
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1278
+        width: 549
+        height: 369
+      alignment: 9
+      pivot: {x: .477231324, y: .59620595}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00020
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1308
+        width: 534
+        height: 368
+      alignment: 9
+      pivot: {x: .490636706, y: .595108688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00021
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1649
+        width: 529
+        height: 397
+      alignment: 9
+      pivot: {x: .495274097, y: .5491184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00022
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1177
+        width: 526
+        height: 424
+      alignment: 9
+      pivot: {x: .49809885, y: .509433985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pes zere_00023
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1603
+        width: 519
+        height: 443
+      alignment: 9
+      pivot: {x: .504816949, y: .485327303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

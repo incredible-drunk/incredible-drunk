@@ -4,6 +4,7 @@ using System.Collections;
 public class BackgroundPropSpawner : MonoBehaviour
 {
 	public Rigidbody2D backgroundProp;		// The prop to be instantiated.
+    public Rigidbody2D backgroundPropL;		// The prop to be instantiated.
 	public float leftSpawnPosX;				// The x coordinate of position if it's instantiated on the left.
 	public float rightSpawnPosX;			// The x coordinate of position if it's instantiated on the right.
 	public float minSpawnPosY;				// The lowest possible y coordinate of position.
@@ -11,7 +12,12 @@ public class BackgroundPropSpawner : MonoBehaviour
 	public float minTimeBetweenSpawns;		// The shortest possible time between spawns.
 	public float maxTimeBetweenSpawns;		// The longest possible time between spawns.
 	public float minSpeed;					// The lowest possible speed of the prop.
-	public float maxSpeed;					// The highest possible speeed of the prop.
+	public float maxSpeed;	
+	public float TimeToFirstSpawn;
+	public bool SpawnedForFirstTime = false;
+
+
+	// The highest possible speeed of the prop.
 
 	void Start ()
 	{
@@ -25,8 +31,15 @@ public class BackgroundPropSpawner : MonoBehaviour
 
 	IEnumerator Spawn ()
 	{
+		float waitTime = 0;
+		if (SpawnedForFirstTime == false) {
+			waitTime = TimeToFirstSpawn;
+			SpawnedForFirstTime = true;
+		}else{
+			waitTime = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
+		}
 		// Create a random wait time before the prop is instantiated.
-		float waitTime = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
+
 
 		// Wait for the designated period.
 		yield return new WaitForSeconds(waitTime);
@@ -43,11 +56,11 @@ public class BackgroundPropSpawner : MonoBehaviour
 		// Set the position the prop should spawn at.
 		Vector3 spawnPos = new Vector3(posX, posY, transform.position.z);
 
-		// Instantiate the prop at the desired position.
-		Rigidbody2D propInstance = Instantiate(backgroundProp, spawnPos, Quaternion.identity) as Rigidbody2D;
+		// Instantiate the prop at the desired position.        
+        Rigidbody2D propInstance = Instantiate(facingLeft && backgroundPropL != null ? backgroundPropL : backgroundProp, spawnPos, Quaternion.identity) as Rigidbody2D;
 
 		// The sprites for the props all face left.  Therefore, if the prop should be facing right...
-		if(facingLeft)
+        if (facingLeft && backgroundPropL == null)
 		{
 			// ... flip the scale in the x axis.
 			Vector3 scale = propInstance.transform.localScale;

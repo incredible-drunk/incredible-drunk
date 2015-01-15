@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: 3ba2d104ddbe2054191e77f0d7f04219
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mys_00000
+    21300002: mys_00001
+    21300004: mys_00002
+    21300006: mys_00003
+    21300008: mys_00004
+    21300010: mys_00005
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mys_00000
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 634
+        width: 329
+        height: 127
+      alignment: 9
+      pivot: {x: .443769008, y: .61811024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mys_00001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 506
+        width: 329
+        height: 126
+      alignment: 9
+      pivot: {x: .443769008, y: .615079343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mys_00002
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 893
+        width: 329
+        height: 129
+      alignment: 9
+      pivot: {x: .443769008, y: .624031007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mys_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 763
+        width: 329
+        height: 128
+      alignment: 9
+      pivot: {x: .443769008, y: .62109375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mys_00004
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 378
+        width: 329
+        height: 126
+      alignment: 9
+      pivot: {x: .443769008, y: .615079343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mys_00005
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 250
+        width: 329
+        height: 126
+      alignment: 9
+      pivot: {x: .443769008, y: .615079343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

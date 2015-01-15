@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 849a763a3c23d954f9b416b5cf07ad49
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Opilec idle 20_00000
+    21300002: Opilec idle 20_00001
+    21300004: Opilec idle 20_00002
+    21300006: Opilec idle 20_00003
+    21300008: Opilec idle 20_00004
+    21300010: Opilec idle 20_00005
+    21300012: Opilec idle 20_00006
+    21300014: Opilec idle 20_00007
+    21300016: Opilec idle 20_00008
+    21300018: Opilec idle 20_00009
+    21300020: Opilec idle 20_00010
+    21300022: Opilec idle 20_00011
+    21300024: Opilec idle 20_00012
+    21300026: Opilec idle 20_00013
+    21300028: Opilec idle 20_00014
+    21300030: Opilec idle 20_00015
+    21300032: Opilec idle 20_00016
+    21300034: Opilec idle 20_00017
+    21300036: Opilec idle 20_00018
+    21300038: Opilec idle 20_00019
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 300
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Opilec idle 20_00000
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 2525
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00001
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3310
+        width: 283
+        height: 784
+      alignment: 9
+      pivot: {x: .604240298, y: .503826559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00002
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1741
+        width: 277
+        height: 783
+      alignment: 9
+      pivot: {x: .61371839, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00003
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1740
+        width: 277
+        height: 783
+      alignment: 9
+      pivot: {x: .61371839, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00004
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 3311
+        width: 281
+        height: 783
+      alignment: 9
+      pivot: {x: .604982197, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00005
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1741
+        width: 277
+        height: 782
+      alignment: 9
+      pivot: {x: .61371839, y: .505115092}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00006
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 2526
+        width: 281
+        height: 782
+      alignment: 9
+      pivot: {x: .604982197, y: .505115092}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00007
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 2526
+        width: 281
+        height: 783
+      alignment: 9
+      pivot: {x: .604982197, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00008
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 2526
+        width: 281
+        height: 783
+      alignment: 9
+      pivot: {x: .604982197, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00009
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2525
+        width: 281
+        height: 783
+      alignment: 9
+      pivot: {x: .604982197, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00010
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 2525
+        width: 277
+        height: 783
+      alignment: 9
+      pivot: {x: .61371839, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00011
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 2525
+        width: 277
+        height: 783
+      alignment: 9
+      pivot: {x: .61371839, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00012
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 3311
+        width: 282
+        height: 783
+      alignment: 9
+      pivot: {x: .602836907, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00013
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1741
+        width: 277
+        height: 783
+      alignment: 9
+      pivot: {x: .61371839, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00014
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 1741
+        width: 277
+        height: 783
+      alignment: 9
+      pivot: {x: .61371839, y: .504469991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00015
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 3310
+        width: 283
+        height: 784
+      alignment: 9
+      pivot: {x: .604240298, y: .503826559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00016
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 3310
+        width: 283
+        height: 784
+      alignment: 9
+      pivot: {x: .604240298, y: .503826559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00017
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 3310
+        width: 283
+        height: 784
+      alignment: 9
+      pivot: {x: .604240298, y: .503826559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00018
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 3310
+        width: 283
+        height: 784
+      alignment: 9
+      pivot: {x: .604240298, y: .503826559}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Opilec idle 20_00019
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 2525
+        width: 278
+        height: 783
+      alignment: 9
+      pivot: {x: .615107894, y: .503192842}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
