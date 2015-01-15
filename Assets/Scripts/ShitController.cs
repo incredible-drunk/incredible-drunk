@@ -28,7 +28,7 @@ public class ShitController : MonoBehaviour
     public void spawnShit()
     {
         Debug.Log("Spawn the shit right here!");
-		shitSpawner.SpawnShitAtPoint (ShitPoint.position);
+		shitSpawner.SpawnShitAtPoint (ShitPoint.position);        
     }
 
     public void takeShit()
