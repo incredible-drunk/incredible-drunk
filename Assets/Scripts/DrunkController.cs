@@ -189,10 +189,11 @@ public class DrunkController : MonoBehaviour {
 	}
 
 	private void SetpOutOfShit(){
-
-		anim.SetTrigger("Twalk");
-		anim.ResetTrigger("Tshit");
-		Invoke ("SteppedOutOfShit", 1f);
+		if (State == DrunkState.InDeepShit) {
+			anim.SetTrigger ("Twalk");
+			anim.ResetTrigger ("Tshit");
+			Invoke ("SteppedOutOfShit", 1f);
+		}
 
 	}
 	public void SteppedOutOfShit(){

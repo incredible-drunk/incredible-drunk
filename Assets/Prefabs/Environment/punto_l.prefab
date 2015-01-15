@@ -54,6 +54,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &145192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 445192}
+  - 82: {fileID: 8245192}
+  m_Layer: 0
+  m_Name: CarSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &186904
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,12 +93,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.61000013, y: -1.13, z: 0}
+  m_LocalPosition: {x: 7.88391066, y: -6.22543335, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 427492}
   - {fileID: 427490}
   - {fileID: 486904}
+  - {fileID: 445192}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &427490
@@ -109,6 +126,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 427488}
   m_RootOrder: 0
+--- !u!4 &445192
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145192}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.839243889, y: .810177565, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427488}
+  m_RootOrder: 3
 --- !u!4 &486904
 Transform:
   m_ObjectHideFlags: 1
@@ -188,6 +217,74 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .586666644
   m_Center: {x: 0, y: 0}
+--- !u!82 &8245192
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145192}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 3d34bfdd2577ad3469fef25db101635e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 8
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .125
+      value: 1
+      inSlope: -8.00319386
+      outSlope: -8.00319386
+      tangentMode: 0
+    - time: .327720225
+      value: .493055552
+      inSlope: -2.65347981
+      outSlope: -2.65347981
+      tangentMode: 0
+    - time: .624352336
+      value: .25
+      inSlope: -.500199616
+      outSlope: -.500199616
+      tangentMode: 0
+    - time: 1
+      value: .125
+      inSlope: -.125049904
+      outSlope: -.125049904
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9592824
 Animator:
   serializedVersion: 3

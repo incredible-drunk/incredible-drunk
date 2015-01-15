@@ -10,6 +10,7 @@ public class Cat : ItemIngameScript {
 	private GameObject targetMouse = null;
 	public AudioClip JumpSound = null;
 	private AudioSource auidoSource;
+	private bool 		soundPlayed = false;
 	// Use this for initialization
 	void Start () {
 		auidoSource = GetComponent<AudioSource>();
@@ -41,8 +42,11 @@ public class Cat : ItemIngameScript {
 			}
 			this.rigidbody2D.velocity = new Vector2(sign*(float)4.6,(float)10);
 			if(JumpSound != null){
-
+				if(soundPlayed){
+					auidoSource.volume = 0.2f;
+				}
 				auidoSource.PlayOneShot(JumpSound);
+				soundPlayed = true;
 				//AudioSource.PlayClipAtPoint(JumpSound,this.transform.position);
 			}
 		}
