@@ -4,6 +4,7 @@ using System.Collections;
 public class BackgroundPropSpawner : MonoBehaviour
 {
 	public Rigidbody2D backgroundProp;		// The prop to be instantiated.
+    public Rigidbody2D backgroundPropL;		// The prop to be instantiated.
 	public float leftSpawnPosX;				// The x coordinate of position if it's instantiated on the left.
 	public float rightSpawnPosX;			// The x coordinate of position if it's instantiated on the right.
 	public float minSpawnPosY;				// The lowest possible y coordinate of position.
@@ -55,11 +56,11 @@ public class BackgroundPropSpawner : MonoBehaviour
 		// Set the position the prop should spawn at.
 		Vector3 spawnPos = new Vector3(posX, posY, transform.position.z);
 
-		// Instantiate the prop at the desired position.
-		Rigidbody2D propInstance = Instantiate(backgroundProp, spawnPos, Quaternion.identity) as Rigidbody2D;
+		// Instantiate the prop at the desired position.        
+        Rigidbody2D propInstance = Instantiate(facingLeft && backgroundPropL != null ? backgroundPropL : backgroundProp, spawnPos, Quaternion.identity) as Rigidbody2D;
 
 		// The sprites for the props all face left.  Therefore, if the prop should be facing right...
-		if(facingLeft)
+        if (facingLeft && backgroundPropL == null)
 		{
 			// ... flip the scale in the x axis.
 			Vector3 scale = propInstance.transform.localScale;
