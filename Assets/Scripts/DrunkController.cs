@@ -184,7 +184,8 @@ public class DrunkController : MonoBehaviour {
 		Random.seed = (int)(Time.time * 1000);
 		int clipNumber = Random.Range ((int)0, ShitAnnoyedClips.Length);
 		var clip = ShitAnnoyedClips [clipNumber];
-		source.PlayOneShot (clip);
+		source.clip = clip;
+		source.Play ();
 	}
 
 	private void SetpOutOfShit(){
@@ -204,7 +205,14 @@ public class DrunkController : MonoBehaviour {
 		anim.ResetTrigger("Tshit");
 		anim.SetTrigger("Trozmrd");
 		State = DrunkState.Rozmrd;
+		audio.Stop ();
 		GetComponent<AudioSource> ().PlayOneShot (RozmrdSound);
+		Invoke ("WinTheGame", 1.5f);
+
+	}
+
+	public void WinTheGame(){
+		gameState.SetNewGameState (GameStates.GameOverWin);
 	}
 
 	public void CommentOnPlacement(AudioClip clip,float delay){

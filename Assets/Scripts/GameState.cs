@@ -15,15 +15,18 @@ public enum GameStates{
 public class GameState : MonoBehaviour, IGameStateListener {
 	private bool initialized = false;
 	public GameStates State;
+	public GameObject GameOverUI;
 	public GameObject GameStateTextUi;
 	public GameObject GameStateButton;
 	public GameObject GameResetButton;
+	public Text 	  GameResultText;
 	public float PlayableAreaMinY;
 	public float PlayableAreaMaxY;
 	public float PlayableAreaMinX;
 	public float PlayableAreaMaxX;
 	public AudioClip IntroMusic;
 	public AudioClip GameMusic;
+
 	private List<IGameStateListener> _gameStateListeners = new List<IGameStateListener>();
 
 
@@ -46,16 +49,19 @@ public class GameState : MonoBehaviour, IGameStateListener {
 			GameStateButton.SetActive(false);
 			GameResetButton.SetActive(false);
 			GameStateTextUi.SetActive(false);
+			GameOverUI.SetActive(false);	
 		}
 		if (State == GameStates.Planning) {
 				GameResetButton.SetActive(true);
 				GameStateButton.SetActive(true);
 				GameStateTextUi.SetActive(true);
+				GameOverUI.SetActive(false);	
 				textComponent.text = "Plánovací fáze";		
 		} else if (State == GameStates.Simulation) {
 				GameStateButton.SetActive(false);
 				GameResetButton.SetActive(true);
 				GameStateTextUi.SetActive(true);
+				GameOverUI.SetActive(false);	
 				textComponent.text = "Snímací fáze";
 		} else if (State == GameStates.Intro || State == GameStates.GameOverLose || State == GameStates.GameOverWin) {
 			textComponent.text = "";
@@ -97,14 +103,26 @@ public class GameState : MonoBehaviour, IGameStateListener {
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
 		if (newState == GameStates.Intro) {
-			audio.volume = 1f;
-			audio.clip = IntroMusic;
-			audio.Play ();
-		} else if (newState == GameStates.Planning && oldStates == GameStates.Intro ) {
-			audio.volume = 0.22f;
-			audio.clip =GameMusic;
-			audio.loop = true;
-			audio.Play();
+				audio.volume = 1f;
+				audio.clip = IntroMusic;
+				audio.Play ();
+		} else if (newState == GameStates.Planning && oldStates == GameStates.Intro) {
+				audio.volume = 0.22f;
+				audio.clip = GameMusic;
+				audio.loop = true;
+				audio.Play ();
+		} else if (newState == GameStates.GameOverLose) {
+				GameOverUI.SetActive (true);
+				GameResultText.text = "Prohrál jsi!";
+				GameStateButton.SetActive(false);
+				GameResetButton.SetActive(false);
+				GameStateTextUi.SetActive(false);
+		} else if (newState == GameStates.GameOverWin) {
+				GameOverUI.SetActive(true);	
+				GameResultText.text = "Vyhrál jsi!";
+				GameStateButton.SetActive(false);
+				GameResetButton.SetActive(false);
+				GameStateTextUi.SetActive(false);
 		}
 	}
 	#endregion

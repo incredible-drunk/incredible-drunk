@@ -139,8 +139,8 @@ public class CameraFollow : MonoBehaviour, IGameStateListener
         {
 			target = null;
             GetComponent<Animator>().enabled = false;
-        }else if(newState == GameStates.GameOverLose){
-			//target = GameObject.FindGameObjectWithTag("Drunk").transform;
+        }else if(newState == GameStates.GameOverWin){
+			target = GameObject.FindGameObjectWithTag("Drunk").transform;
 		}
     }
 

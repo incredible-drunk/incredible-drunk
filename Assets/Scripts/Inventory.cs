@@ -19,6 +19,8 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	ItemDatabase databse;
 	public AudioSource audioSource;
 	public AudioClip tutorialClip;
+	public AudioClip[] ProtagonistWinClips;
+	public AudioClip[] ProtagonistLooseClips;
 	private bool tutorialPlayed;
 
 	float firsSlotX = -278.2f;
@@ -186,32 +188,39 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
-
+		if (newState == GameStates.GameOverWin) {
+			audioSource.clip = ProtagonistWinClips[Random.Range(0,ProtagonistWinClips.Length)];
+			audioSource.Play();
+		}else if(newState == GameStates.GameOverLose){
+			audioSource.clip = ProtagonistLooseClips[Random.Range(0,ProtagonistLooseClips.Length)];
+			audioSource.Play();
+		}
 		
 
 		if (newState == GameStates.Planning) {
-			if(oldStates == GameStates.Intro){
-				if(tutorialPlayed == false){
-					PlayTutorial();
-				}
+			if (oldStates == GameStates.Intro) {
+					if (tutorialPlayed == false) {
+							PlayTutorial ();
+					}
 			}
-			if(oldStates == GameStates.Planning || oldStates == GameStates.Intro){
-				DestroyPlacedItems ();
-				ResetInventory ();
+			if (oldStates == GameStates.Planning || oldStates == GameStates.Intro) {
+					DestroyPlacedItems ();
+					ResetInventory ();
 
-			}else{
-				foreach (GameObject slot in Slots) {
-					slot.SetActive(true);
-				}
-				ResetPlacedItems();
+			} else {
+					foreach (GameObject slot in Slots) {
+							slot.SetActive (true);
+					}
+					ResetPlacedItems ();
 			}
-		} else if (newState == GameStates.Simulation || newState == GameStates.Intro) {
-			this.gameObject.GetComponent<Image>().enabled = false;
-			foreach (GameObject slot in Slots) {
-				slot.SetActive(false);
+			} else if (newState == GameStates.Simulation || newState == GameStates.Intro) {
+					this.gameObject.GetComponent<Image> ().enabled = false;
+					foreach (GameObject slot in Slots) {
+							slot.SetActive (false);
+					}	
 			}
-						
-		}
+
+
 	}
 
 
