@@ -26,8 +26,8 @@ public class DrunkController : MonoBehaviour {
 	public AudioClip ShitAnnoyed = null;
 	private AudioClip clipToPlay = null;
 
-
-
+    private bool dodgedPiano = false;
+    private bool dodgin = false;
 
 
     private Animator anim;
@@ -88,9 +88,9 @@ public class DrunkController : MonoBehaviour {
 	void FixedUpdate () {
 		PlayIdle ();
 		if (gameState.State == GameStates.Simulation) {
-			if(State == DrunkState.Normal){
+			if(State == DrunkState.Normal && !dodgin){
 				rigidbody2D.velocity = new Vector2(transform.localScale.x * speed, rigidbody2D.velocity.y);
-	            Walk();
+	            Walk(); 
 			}else if(State == DrunkState.InDeepShit){
 				if(shitCleanedTime < Time.time){
 					SetpOutOfShit();
@@ -132,6 +132,10 @@ public class DrunkController : MonoBehaviour {
 
     private void Stop() {
         anim.SetTrigger("Tstop");
+    }
+
+    private void Dodge() {
+        anim.SetTrigger("Tdodge");
     }
 
 	private void StepInShit(){
@@ -197,13 +201,28 @@ public class DrunkController : MonoBehaviour {
 			Debug.Log("Stepped in shit");
 			StepInShit();
 		}else if(other.gameObject != null && other.gameObject.tag == "Klavir"){
-			if(State == DrunkState.InDeepShit){
-				DoRozmrd();
+			switch(State) {
+                case DrunkState.InDeepShit:
+				    DoRozmrd();
+                    break;
+                case DrunkState.Normal:
+                    DodgePiano();
+                    break;
 			}
 		}
-
-		
 	}
+
+    void DodgePiano () {
+        if (!dodgedPiano) { 
+            Dodge();
+            rigidbody2D.velocity = new Vector2(transform.localScale.x * -2f, transform.localScale.y * 7f);
+            dodgedPiano = dodgin = true;
+        }
+    }
+
+    public void dodged() {
+        dodgin = false;
+    }
 
 
 
