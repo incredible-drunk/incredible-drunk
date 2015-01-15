@@ -18,6 +18,8 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 	public bool mouseInsideInventory = false;
 	ItemDatabase databse;
 	public AudioSource audioSource;
+	public AudioClip tutorialClip;
+	private bool tutorialPlayed;
 
 	float firsSlotX = -278.2f;
 	// Use this for initialization
@@ -184,10 +186,19 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
 	public void OnGameStateChange (GameStates oldStates, GameStates newState)
 	{
+
+		
+
 		if (newState == GameStates.Planning) {
+			if(oldStates == GameStates.Intro){
+				if(tutorialPlayed == false){
+					PlayTutorial();
+				}
+			}
 			if(oldStates == GameStates.Planning || oldStates == GameStates.Intro){
 				DestroyPlacedItems ();
 				ResetInventory ();
+
 			}else{
 				foreach (GameObject slot in Slots) {
 					slot.SetActive(true);
@@ -202,6 +213,8 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 						
 		}
 	}
+
+
 
 	private void ResetPlacedItems(){
 		foreach(PlacedItem placedItem in _placedItems){
@@ -243,6 +256,12 @@ public class Inventory : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 			Destroy(placedItem.InGameItem);
 		}
 		_placedItems.Clear();
+	}
+
+	private void PlayTutorial(){
+		audio.clip = tutorialClip;
+		audio.Play ();
+		tutorialPlayed = true;
 	}
 
 	#endregion

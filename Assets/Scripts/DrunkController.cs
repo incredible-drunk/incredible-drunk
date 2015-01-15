@@ -5,7 +5,9 @@ using System.Collections.Generic;
 public enum DrunkState{
 	Normal,
 	InDeepShit,
-	Rozmrd
+	Rozmrd,
+    AtTheEnd,
+	WalkingAway
 }
 
 public class DrunkController : MonoBehaviour {
@@ -24,6 +26,8 @@ public class DrunkController : MonoBehaviour {
 
 	public AudioClip RozmrdSound = null;
 	public AudioClip ShitAnnoyed = null;
+	public AudioClip[] DrunkWinClips;
+
 	private AudioClip clipToPlay = null;
 
 
@@ -88,7 +92,7 @@ public class DrunkController : MonoBehaviour {
 	void FixedUpdate () {
 		PlayIdle ();
 		if (gameState.State == GameStates.Simulation) {
-			if(State == DrunkState.Normal){
+			if(State == DrunkState.Normal || State == DrunkState.WalkingAway){
 				rigidbody2D.velocity = new Vector2(transform.localScale.x * speed, rigidbody2D.velocity.y);
 	            Walk();
 			}else if(State == DrunkState.InDeepShit){
@@ -96,12 +100,42 @@ public class DrunkController : MonoBehaviour {
 					SetpOutOfShit();
 				}
 			}
+			if(transform.position.x > gameState.PlayableAreaMaxX - 2){
+				GameObject.Find("Main Camera").GetComponent<CameraFollow>().target = this.transform;
+			}
+			if (transform.position.x > gameState.PlayableAreaMaxX) {
+				EndTheGame();
+				
+			}
+
 		}
 
-		if (transform.position.x > gameState.PlayableAreaMaxX) {
-			gameState.State = GameStates.GameOverLose;
-            Stop();
-		}
+
+	}
+
+	private void EndTheGame(){
+		if (State == DrunkState.Normal) {
+						State = DrunkState.AtTheEnd;
+						Stop ();
+						anim.ResetTrigger("Twalk");
+						Flip ();
+						Point ();
+						var clip = DrunkWinClips [Random.Range (0, DrunkWinClips.Length)];
+						audio.clip = clip;
+						audio.Play ();
+						Invoke("WalkAway",audio.clip.length);
+				}
+	}
+
+	public void WalkAway(){
+		State = DrunkState.WalkingAway;
+		Flip ();
+		Invoke("SignalGameEnding",5f);
+	}
+
+	public void SignalGameEnding(){
+		gameState.SetNewGameState (GameStates.GameOverLose);
+		Debug.Log ("Game ended");
 	}
 
     private void Drink() {
@@ -203,6 +237,14 @@ public class DrunkController : MonoBehaviour {
 		}
 
 		
+	}
+
+	public void Flip()
+	{
+		// Multiply the x component of localScale by -1.
+		Vector3 drunkScale = transform.localScale;
+		drunkScale.x *= -1;
+		transform.localScale = drunkScale;
 	}
 
 

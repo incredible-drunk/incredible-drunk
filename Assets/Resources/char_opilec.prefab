@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.43664384, y: -.102796614, z: 0}
+  m_LocalPosition: {x: 5.29339504, y: -.699809194, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -149,6 +149,10 @@ MonoBehaviour:
   ShitClearingTime: 5
   RozmrdSound: {fileID: 8300000, guid: 6586673affa386b4483ec0ac83901ac9, type: 3}
   ShitAnnoyed: {fileID: 8300000, guid: b408c850ac1225f45ab8e34d2e37d7df, type: 3}
+  DrunkWinClips:
+  - {fileID: 8300000, guid: bf4219e305ee48342aa1555f6987feb3, type: 3}
+  - {fileID: 8300000, guid: 2e9bb69224d75a94da083473f1878ca0, type: 3}
+  - {fileID: 8300000, guid: 6513313e442c4e74ab01d1536b3c63cb, type: 3}
 --- !u!212 &21262412
 SpriteRenderer:
   m_ObjectHideFlags: 1

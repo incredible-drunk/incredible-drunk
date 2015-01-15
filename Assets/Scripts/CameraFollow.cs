@@ -22,6 +22,10 @@ public class CameraFollow : MonoBehaviour, IGameStateListener
     private float mapX;
     private float mapY;
 
+	public float dampTime = 2.55f;
+	private Vector3 velocity = Vector3.zero;
+	public Transform target;
+
     void Awake()
     {
         gameState = GameObject.Find("GameState").GetComponent<GameState>();
@@ -40,11 +44,41 @@ public class CameraFollow : MonoBehaviour, IGameStateListener
 
     void Update()
     {
-        if (gameState.State == GameStates.Planning || gameState.State == GameStates.Simulation)
+		if (target)
+		{
+			//Vector3 point = camera.WorldToViewportPoint(target.position);
+			//Vector3 delta = target.position - camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
+			Vector3 destination = target.position; //+ delta;
+			transform.position = Vector3.SmoothDamp(transform.position, LimitTargetFollow(destination), ref velocity, dampTime);
+
+
+
+
+		}else if (gameState.State == GameStates.Planning || gameState.State == GameStates.Simulation)
         {
             MouseWatch();
+			transform.position = LimitTargetFollow (transform.position);
         }
+
     }
+
+	private Vector3 LimitTargetFollow(Vector3 targetTransform){
+		var targetX = targetTransform.x;
+		var targetY = targetTransform.y;
+
+		var vertExtent = Camera.main.camera.orthographicSize;
+		var horzExtent = vertExtent * Screen.width / Screen.height;
+		
+		// Calculations assume map is position at the origin
+		var minX = horzExtent - mapX / 2.0f + gamePane.transform.position.x;
+		var maxX = mapX / 2.0f - horzExtent + gamePane.transform.position.x;
+		var minY = vertExtent - mapY / 2.0f + gamePane.transform.position.y;
+		var maxY = mapY / 2.0f - vertExtent + gamePane.transform.position.y;
+		
+		targetX = Mathf.Clamp(targetX, minX, maxX);
+		targetY = Mathf.Clamp(targetY, minY, maxY);	
+		return new Vector3(targetX, targetY, transform.position.z);
+	}
 
 
     void MouseWatch()
@@ -83,17 +117,6 @@ public class CameraFollow : MonoBehaviour, IGameStateListener
             targetY = Mathf.Lerp(transform.position.y, transform.position.y - speed * Time.deltaTime, ySmooth * Time.deltaTime);
 
 
-        var vertExtent = Camera.main.camera.orthographicSize;
-        var horzExtent = vertExtent * Screen.width / Screen.height;
-
-        // Calculations assume map is position at the origin
-        var minX = horzExtent - mapX / 2.0f + gamePane.transform.position.x;
-        var maxX = mapX / 2.0f - horzExtent + gamePane.transform.position.x;
-        var minY = vertExtent - mapY / 2.0f + gamePane.transform.position.y;
-        var maxY = mapY / 2.0f - vertExtent + gamePane.transform.position.y;
-
-        targetX = Mathf.Clamp(targetX, minX, maxX);
-        targetY = Mathf.Clamp(targetY, minY, maxY);
 
         // Set the camera's position to the target position with the same z component.
         transform.position = new Vector3(targetX, targetY, transform.position.z);
@@ -101,18 +124,24 @@ public class CameraFollow : MonoBehaviour, IGameStateListener
 
     }
 
+
+
     #region IGameStateListener implementation
 
     public void OnGameStateChange(GameStates oldStates, GameStates newState)
     {
         if (newState == GameStates.Intro)
         {
+			target = null;
             GetComponent<Animator>().SetTrigger("IntroStartT");
         }
         else if (newState == GameStates.Planning)
         {
+			target = null;
             GetComponent<Animator>().enabled = false;
-        }
+        }else if(newState == GameStates.GameOverLose){
+			//target = GameObject.FindGameObjectWithTag("Drunk").transform;
+		}
     }
 
     #endregion
