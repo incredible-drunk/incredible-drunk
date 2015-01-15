@@ -42,7 +42,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: swanCreator
+  m_Name: kocarkarCreator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,21 +164,21 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67b461c67a1aa2a49b5a87793a6aa18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundProp: {fileID: 5000000, guid: cccb6fdca5fce44bc94bacf40fa493e8, type: 2}
+  backgroundProp: {fileID: 5054144, guid: 5aa8d5a72b68cda4e877f79214649375, type: 2}
   leftSpawnPosX: -24
   rightSpawnPosX: 24
-  minSpawnPosY: 4
-  maxSpawnPosY: 8
+  minSpawnPosY: .25
+  maxSpawnPosY: .300000012
   minTimeBetweenSpawns: 2
   maxTimeBetweenSpawns: 8
   minSpeed: 5
   maxSpeed: 8
-  TimeToFirstSpawn: 0
+  TimeToFirstSpawn: 4
   SpawnedForFirstTime: 0
 --- !u!1001 &100100000
 Prefab:
