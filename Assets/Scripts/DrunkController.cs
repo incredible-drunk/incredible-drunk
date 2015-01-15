@@ -27,6 +27,8 @@ public class DrunkController : MonoBehaviour {
 	public AudioClip RozmrdSound = null;
 	public AudioClip ShitAnnoyed = null;
 	public AudioClip[] DrunkWinClips;
+	public AudioClip[] DodgeClips;
+	public AudioClip[] BragClips;
 
 	private AudioClip clipToPlay = null;
 
@@ -246,6 +248,7 @@ public class DrunkController : MonoBehaviour {
                     }
                     else {
                         DodgePiano();
+
                     }
                     
                     break;
@@ -264,6 +267,8 @@ public class DrunkController : MonoBehaviour {
 
     void DodgePiano () {
         if (!dodgedPiano) { 
+			var clip = DodgeClips [Random.Range (0, DodgeClips.Length)];
+			audio.PlayOneShot(clip);
             Dodge();
             rigidbody2D.velocity = new Vector2(transform.localScale.x * -2f, transform.localScale.y * 7f);
             dodgedPiano = dodgin = true;
@@ -273,14 +278,15 @@ public class DrunkController : MonoBehaviour {
     //  the drunk plays sound about the stuff
     void Brag() {
         if (!dodgedPiano) {
-            //TODO: Play sound here!
+			var clip = BragClips [Random.Range (0, BragClips.Length)];
+			audio.PlayOneShot(clip);
             Debug.Log("Wtf piano doin?");
             dodgedPiano = true;
         }
     }
 
     public void dodged() {
-        //TODO: Play different sound here!
+
         Debug.Log("Piano dodged succesfully");
         dodgin = false;
     }

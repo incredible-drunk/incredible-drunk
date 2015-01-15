@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.29339504, y: -.699809194, z: 0}
+  m_LocalPosition: {x: 9.22999954, y: .00999999978, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -153,6 +153,16 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bf4219e305ee48342aa1555f6987feb3, type: 3}
   - {fileID: 8300000, guid: 2e9bb69224d75a94da083473f1878ca0, type: 3}
   - {fileID: 8300000, guid: 6513313e442c4e74ab01d1536b3c63cb, type: 3}
+  DodgeClips:
+  - {fileID: 8300000, guid: 520d3f8655871ac45bf7424c6c9bfa32, type: 3}
+  - {fileID: 8300000, guid: 3d5e611d0fb4fb940bc09ef723097214, type: 3}
+  - {fileID: 8300000, guid: c5486d3724a975a4ca9f67ca26d90904, type: 3}
+  - {fileID: 8300000, guid: ff588904263ef3f45be38825ea04c1b1, type: 3}
+  - {fileID: 8300000, guid: cf03265d187860848a1317f393e25a29, type: 3}
+  BragClips:
+  - {fileID: 8300000, guid: fc7da1a1ea2991649a7f70f4b1c4e8d2, type: 3}
+  - {fileID: 8300000, guid: a42e16320bcab9c4fbfbb5dc309c7e8e, type: 3}
+  - {fileID: 8300000, guid: b487098f39efad34dab18da28a8107e0, type: 3}
 --- !u!212 &21262412
 SpriteRenderer:
   m_ObjectHideFlags: 1
