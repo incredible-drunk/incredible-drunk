@@ -240,7 +240,14 @@ public class DrunkController : MonoBehaviour {
 				    DoRozmrd();
                     break;
                 case DrunkState.Normal:
-                    DodgePiano();
+                    var smasher = other.gameObject.GetComponentInParent<KlavirSmasher>();
+                    if (smasher.smashed) {
+                        Brag();
+                    }
+                    else {
+                        DodgePiano();
+                    }
+                    
                     break;
 			}
 		}
@@ -263,7 +270,18 @@ public class DrunkController : MonoBehaviour {
         }
     }
 
+    //  the drunk plays sound about the stuff
+    void Brag() {
+        if (!dodgedPiano) {
+            //TODO: Play sound here!
+            Debug.Log("Wtf piano doin?");
+            dodgedPiano = true;
+        }
+    }
+
     public void dodged() {
+        //TODO: Play different sound here!
+        Debug.Log("Piano dodged succesfully");
         dodgin = false;
     }
 

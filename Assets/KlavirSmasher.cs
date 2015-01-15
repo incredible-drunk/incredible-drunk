@@ -3,11 +3,11 @@ using System.Collections;
 
 public class KlavirSmasher : MonoBehaviour {
 
-	bool smashed = false;
+	public bool smashed { get; private set;}
 
 	// Use this for initialization
 	void Start () {
-	
+        smashed = false;
 	}
 	
 	// Update is called once per frame
