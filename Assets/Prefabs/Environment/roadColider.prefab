@@ -39,7 +39,7 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_Points:
   - {x: -36.1596451, y: -3.97974133}
-  - {x: 26.1038475, y: -3.95935178}
+  - {x: 40.3960419, y: -3.95935178}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
